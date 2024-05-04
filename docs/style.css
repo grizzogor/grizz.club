@@ -1,0 +1,9 @@
+:root {}
+
+body {
+    background-image: url('assets/img/common/bg.gif');
+}
+
+header>img {
+    vertical-align: middle;
+}
