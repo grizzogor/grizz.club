@@ -13,7 +13,7 @@
         @close="onClose"
     >
         <div :class="$style.heading">
-            <img src="@/assets/apps/about/KyloHappy.png" />
+            <img src="@/assets/apps/kylo/stickers/KyloHappy.png" />
             <h2>Welcome to grizz.club</h2>
         </div>
 
@@ -196,6 +196,12 @@ export default {
     display: flex;
     align-items: center;
     flex-direction: column;
+}
+
+.heading > img {
+    width: 140px;
+    height: 140px;
+    display: block;
 }
 
 .mainContentOuter {
