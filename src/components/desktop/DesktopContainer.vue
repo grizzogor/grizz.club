@@ -12,9 +12,10 @@
                 />
                 <DesktopIcon
                     :isActive="activeIconId === 'kylo_byte.sh'"
-                    icon="help"
+                    icon="kylo"
                     text="kylo_byte.sh"
                     @activate="onIconActivate"
+                    @launch="onAppStartApp('kylo', {})"
                 />
             </div>
             <component

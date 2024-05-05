@@ -32,6 +32,11 @@
                         <span :style="{ color: `#ff7300` }">orange</span> wolf
                         protogen running on Linux.
                     </p>
+                    <div>
+                        <button @click="handleClickLaunchKylo">
+                            Launch kylo_byte.sh
+                        </button>
+                    </div>
                 </div>
 
                 <h3 :class="$style.listHeading">Desktop</h3>
@@ -162,6 +167,11 @@ export default {
     extends: AppBase,
     components: {
         WindowBase,
+    },
+    methods: {
+        handleClickLaunchKylo() {
+            this.$emit('startApp', 'kylo', {})
+        },
     },
     mounted() {
         this.updateTitle('About Me')

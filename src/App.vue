@@ -46,6 +46,29 @@ a {
 a:visited {
     color: #a970ce;
 }
+
+button {
+    border-radius: 6px;
+    border: none;
+    background-color: #505050;
+    color: #f7f7f7;
+    font-weight: bold;
+    font-size: 14px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 16px;
+    padding-right: 16px;
+
+    transition: background-color 0.15s ease;
+}
+
+button:hover {
+    background-color: #595959;
+}
+
+button:active {
+    background-color: #6e6e6e;
+}
 </style>
 
 <style module>
