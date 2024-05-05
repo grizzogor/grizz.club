@@ -2,6 +2,10 @@
     <div :class="$style.card">
         <div
             :class="$style.imgContainer"
+            :style="{
+                width: `${width}px`,
+                height: `${height}px`,
+            }"
             @mousemove="handleImgMouseOver"
             @mouseleave="handleImgMouseLeave"
         >
@@ -38,6 +42,8 @@ export default {
         artist: String,
         artistUrl: String,
         type: String,
+        width: Number,
+        height: Number,
     },
     data() {
         return {
@@ -75,8 +81,6 @@ export default {
 }
 
 .imgContainer {
-    width: 150px;
-    height: 150px;
     overflow: hidden;
     margin-bottom: 4px;
 }

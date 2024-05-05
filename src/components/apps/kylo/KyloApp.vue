@@ -44,7 +44,26 @@
                     :name="stickerData.name"
                     :artist="stickerData.artist"
                     :artistUrl="stickerData.artistUrl"
+                    :width="150"
+                    :height="150"
                     type="sticker"
+                />
+            </div>
+        </div>
+
+        <div :class="$style.section">
+            <h3>GIFs</h3>
+            <div :class="$style.imageCardList">
+                <ImageCard
+                    v-for="gifData of getGIFs()"
+                    :key="gifData.name"
+                    :imgUrl="gifData.imgUrl"
+                    :name="gifData.name"
+                    :artist="gifData.artist"
+                    :artistUrl="gifData.artistUrl"
+                    :width="220"
+                    :height="150"
+                    type="gif"
                 />
             </div>
         </div>
@@ -58,98 +77,111 @@ import ImageCard from '@/components/apps/kylo/ImageCard.vue'
 
 const stickers = [
     {
-        imgUrl: 'KyloAngry.png',
+        imgUrl: 'im/KyloAngry.png',
         name: 'Kylo Angry',
         artist: 'chequerootlurks',
         artistUrl: 'https://chequerootlurks.tumblr.com/',
     },
     {
-        imgUrl: 'KyloEvil.png',
+        imgUrl: 'im/KyloEvil.png',
         name: 'Kylo Evil',
         artist: 'chequerootlurks',
         artistUrl: 'https://chequerootlurks.tumblr.com/',
     },
     {
-        imgUrl: 'KyloEyeroll.png',
+        imgUrl: 'im/KyloEyeroll.png',
         name: 'Kylo Eyeroll',
         artist: 'chequerootlurks',
         artistUrl: 'https://chequerootlurks.tumblr.com/',
     },
     {
-        imgUrl: 'KyloHappy.png',
+        imgUrl: 'im/KyloHappy.png',
         name: 'Kylo Happy',
         artist: 'chequerootlurks',
         artistUrl: 'https://chequerootlurks.tumblr.com/',
     },
     {
-        imgUrl: 'KyloHeart.png',
+        imgUrl: 'im/KyloHeart.png',
         name: 'Kylo Heart',
         artist: 'chequerootlurks',
         artistUrl: 'https://chequerootlurks.tumblr.com/',
     },
     {
-        imgUrl: 'KyloKisser.png',
+        imgUrl: 'im/KyloKisser.png',
         name: 'Kylo Kisser',
         artist: 'chequerootlurks',
         artistUrl: 'https://chequerootlurks.tumblr.com/',
     },
     {
-        imgUrl: 'KyloOwO.png',
+        imgUrl: 'im/KyloOwO.png',
         name: 'Kylo OwO',
         artist: 'chequerootlurks',
         artistUrl: 'https://chequerootlurks.tumblr.com/',
     },
     {
-        imgUrl: 'KyloPanic.png',
+        imgUrl: 'im/KyloPanic.png',
         name: 'Kylo Panic',
         artist: 'chequerootlurks',
         artistUrl: 'https://chequerootlurks.tumblr.com/',
     },
     {
-        imgUrl: 'KyloPog.png',
+        imgUrl: 'im/KyloPog.png',
         name: 'Kylo Pog',
         artist: 'chequerootlurks',
         artistUrl: 'https://chequerootlurks.tumblr.com/',
     },
     {
-        imgUrl: 'KyloPuppyEyes.png',
+        imgUrl: 'im/KyloPuppyEyes.png',
         name: 'Kylo Puppy Eyes',
         artist: 'chequerootlurks',
         artistUrl: 'https://chequerootlurks.tumblr.com/',
     },
     {
-        imgUrl: 'KyloSad.png',
+        imgUrl: 'im/KyloSad.png',
         name: 'Kylo Sad',
         artist: 'chequerootlurks',
         artistUrl: 'https://chequerootlurks.tumblr.com/',
     },
     {
-        imgUrl: 'KyloScared.png',
+        imgUrl: 'im/KyloScared.png',
         name: 'Kylo Scared',
         artist: 'chequerootlurks',
         artistUrl: 'https://chequerootlurks.tumblr.com/',
     },
     {
-        imgUrl: 'KyloTearsOfJoy.png',
+        imgUrl: 'im/KyloTearsOfJoy.png',
         name: 'Kylo Tears of Joy',
         artist: 'chequerootlurks',
         artistUrl: 'https://chequerootlurks.tumblr.com/',
     },
     {
-        imgUrl: 'KyloThinking.png',
+        imgUrl: 'im/KyloThinking.png',
         name: 'Kylo Thinking',
         artist: 'chequerootlurks',
         artistUrl: 'https://chequerootlurks.tumblr.com/',
     },
     {
-        imgUrl: 'KyloWink.png',
+        imgUrl: 'im/KyloWink.png',
         name: 'Kylo Wink',
         artist: 'chequerootlurks',
         artistUrl: 'https://chequerootlurks.tumblr.com/',
     },
 ]
 
-const kyloStickersContext = require.context(
+const gifs = [
+    {
+        imgUrl: 'im/KyloHi.gif',
+        name: 'Kylo Hi',
+        artist: 'nnathan (Discord)',
+    },
+    {
+        imgUrl: 'im/KyloBye.gif',
+        name: 'Kylo Bye',
+        artist: 'nnathan (Discord)',
+    },
+]
+
+const fileContext = require.context(
     '@/assets/apps/kylo',
     true, // Subdirectories
     /\.png$/
@@ -164,30 +196,27 @@ export default {
     },
     methods: {
         getStickers() {
-            return stickers.map((x) => {
-                return {
-                    imgUrl: 'im/' + x.imgUrl,
-                    name: x.name,
-                    artist: x.artist,
-                    artistUrl: x.artistUrl,
-                }
-            })
+            return stickers
+        },
+
+        getGIFs() {
+            return gifs
         },
 
         handleMouseEnterHeadingImg(e) {
             const imgEl = e.target
-            imgEl.src = kyloStickersContext('./KyloPog.png')
+            imgEl.src = fileContext('./KyloPog.png')
 
             setTimeout(() => {
                 if (imgEl.src.includes('Pog')) {
-                    imgEl.src = kyloStickersContext('./KyloHappy.png')
+                    imgEl.src = fileContext('./KyloHappy.png')
                 }
             }, 250)
         },
 
         handleMouseLeaveHeadingImg(e) {
             const imgEl = e.target
-            imgEl.src = kyloStickersContext('./KyloHappy.png')
+            imgEl.src = fileContext('./KyloHappy.png')
         },
     },
     mounted() {
@@ -201,6 +230,10 @@ export default {
 .section {
     padding: 16px;
     margin-bottom: 16px;
+}
+
+.section > h3 {
+    margin-left: 8px;
 }
 
 .heading {
