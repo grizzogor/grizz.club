@@ -1,6 +1,6 @@
 <template>
     <div :class="$style.background">
-        <img :class="$style.backgroundImg" src="@/assets/img/background.png" />
+        <img :class="$style.backgroundImg" src="@/assets/img/background.jpg" />
     </div>
 </template>
 
@@ -19,6 +19,8 @@ export default {
     right: 0;
     z-index: 0;
     background-color: #a13978;
+
+    transition: background-color 0.1s ease;
 }
 
 .backgroundImg {
@@ -35,10 +37,6 @@ export default {
 }
 
 @keyframes backgroundImgIntro {
-    0% {
-        opacity: 0;
-    }
-
     100% {
         opacity: 1;
     }
