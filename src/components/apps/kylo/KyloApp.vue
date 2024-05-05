@@ -61,8 +61,8 @@
                     :name="gifData.name"
                     :artist="gifData.artist"
                     :artistUrl="gifData.artistUrl"
-                    :width="220"
-                    :height="150"
+                    :width="gifData.width || 220"
+                    :height="gifData.height || 150"
                     type="gif"
                 />
             </div>
@@ -178,6 +178,13 @@ const gifs = [
         imgUrl: 'im/KyloBye.gif',
         name: 'Kylo Bye',
         artist: 'nnathan (Discord)',
+    },
+    {
+        imgUrl: 'im/KyloPet.gif',
+        name: 'Kylo Pet',
+        artist: 'otter-boo',
+        artistUrl: 'https://www.deviantart.com/otter-boo',
+        width: 150,
     },
 ]
 
