@@ -95,10 +95,10 @@
                         <span>Lemmy</span>
                         <span>
                             <a
-                                href="https://lemmy.ndlug.org/u/grizz"
+                                href="https://lemmy.world/u/grizz"
                                 target="_blank"
                             >
-                                @grizz@lemmy.ndlug.org
+                                @grizz@lemmy.world
                             </a>
                         </span>
                     </div>
@@ -112,6 +112,39 @@
                                 @grizzogor
                             </a>
                         </span>
+                    </div>
+                </div>
+                <h3 :class="$style.listHeading">Gaming</h3>
+                <div :class="$style.list">
+                    <div :class="$style.listItem">
+                        <span><i class="bi bi-playstation" /> PlayStation</span>
+                        <span>
+                            <a
+                                href="https://psnprofiles.com/grizzogor"
+                                target="_blank"
+                            >
+                                grizzogor (PSNProfiles)
+                            </a>
+                        </span>
+                    </div>
+                    <div :class="$style.listItem">
+                        <span><i class="bi bi-dpad-fill" /> Consoles</span>
+                        <span>PS5, PS4, PS3, PS Vita</span>
+                    </div>
+                    <div :class="$style.listItem">
+                        <span><i class="bi bi-steam" /> Steam</span>
+                        <span>
+                            <a
+                                href="https://steamcommunity.com/id/grizzogor/"
+                                target="_blank"
+                            >
+                                grizzogor
+                            </a>
+                        </span>
+                    </div>
+                    <div :class="$style.listItem">
+                        <span><i class="bi bi-discord" /> Discord</span>
+                        <span>@grizzogor</span>
                     </div>
                 </div>
             </div>
@@ -220,13 +253,5 @@ export default {
 .list > .listItem {
     display: flex;
     justify-content: space-between;
-}
-
-a {
-    color: #4d94e9;
-}
-
-a:visited {
-    color: #b351b3;
 }
 </style>

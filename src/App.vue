@@ -38,6 +38,14 @@ body {
     background-color: #242424;
     color: #eeeeee;
 }
+
+a {
+    color: #ff7300;
+}
+
+a:visited {
+    color: #a970ce;
+}
 </style>
 
 <style module>
