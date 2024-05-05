@@ -76,6 +76,22 @@ export default {
     overflow: hidden;
 
     transition: filter 0.15s ease;
+
+    transform: scale(0.9);
+    opacity: 0.75;
+
+    animation-name: window-in-anim;
+    animation-duration: 0.25s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;
+}
+
+@keyframes window-in-anim {
+    100% {
+        transform: none;
+        opacity: 1;
+    }
 }
 
 .active {

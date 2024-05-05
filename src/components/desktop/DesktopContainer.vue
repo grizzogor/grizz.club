@@ -2,7 +2,21 @@
     <div :class="$style.main">
         <DesktopMenuBar></DesktopMenuBar>
         <div :class="$style.desktop" @click="onClickDesktop" ref="desktop">
-            <div :class="$style.desktopIcons" id="desktop-icons"></div>
+            <div :class="$style.desktopIcons" id="desktop-icons">
+                <DesktopIcon
+                    :isActive="activeIconId === 'About Me'"
+                    icon="help"
+                    text="About Me"
+                    @activate="onIconActivate"
+                    @launch="onAppStartApp('about', {})"
+                />
+                <DesktopIcon
+                    :isActive="activeIconId === 'kylo_byte.sh'"
+                    icon="help"
+                    text="kylo_byte.sh"
+                    @activate="onIconActivate"
+                />
+            </div>
             <component
                 v-for="app in apps"
                 :key="app.id"
@@ -23,6 +37,7 @@
 
 <script>
 import DesktopMenuBar from '@/components/desktop/DesktopMenuBar.vue'
+import DesktopIcon from '@/components/desktop/DesktopIcon.vue'
 import { createVNode } from 'vue'
 import { getAppTypeFromName } from '@/app-types'
 import { store } from './desktop-store'
@@ -31,6 +46,7 @@ export default {
     name: 'DesktopContainer',
     components: {
         DesktopMenuBar,
+        DesktopIcon,
     },
     data() {
         return {
@@ -42,11 +58,16 @@ export default {
         }
     },
     methods: {
+        onIconActivate(iconId) {
+            this.activeIconId = iconId
+        },
+
         onClickDesktop(e) {
             if (e.target.id !== 'desktop-icons') {
                 return
             }
             this.activeAppId = -1
+            this.activeIconId = ''
         },
 
         onAppActivate(appId) {
@@ -147,8 +168,8 @@ export default {
         },
     },
     mounted() {
+        // Launch the about me app by default.
         this.onAppStartApp('about', {})
-        this.onAppStartApp('kylo', {})
 
         // Store the desktop's current size so the Window can access it for resize/reposition actions.
         const handleResize = () => {
@@ -175,6 +196,10 @@ export default {
                         400,
                         Math.min(900, app.data.size.height * changeHeight)
                     ),
+                }
+                app.data.position = {
+                    x: app.data.position.x * changeWidth,
+                    y: app.data.position.y * changeHeight,
                 }
             }
         }
@@ -203,5 +228,11 @@ export default {
     right: 0;
     bottom: 0;
     z-index: 0;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 8px;
+    padding: 8px;
 }
 </style>
