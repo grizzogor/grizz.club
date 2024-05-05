@@ -3,12 +3,14 @@
         :id="`app-${this.appId}`"
         :titleTxt="this.getTitleText()"
         :position="this.getPosition()"
+        :size="this.getSize()"
         :isActive="isActive"
         :style="{
             zIndex: this.zIndex,
         }"
         @mousedown="onMouseDown"
         @move="onMove"
+        @close="onClose"
     >
         <div :class="$style.heading">
             <img src="@/assets/apps/about/KyloHappy.png" />
@@ -25,8 +27,10 @@
                         about it.
                     </p>
                     <p>
-                        My character's name is Kylo Byte. He is a purple and
-                        orange wolf protogen running on Linux.
+                        My character's name is Kylo Byte. He is a
+                        <span :style="{ color: `#a970ce` }">purple</span> and
+                        <span :style="{ color: `#ff7300` }">orange</span> wolf
+                        protogen running on Linux.
                     </p>
                 </div>
 

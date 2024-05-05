@@ -1,7 +1,7 @@
 <template>
     <div :class="$style.main">
         <DesktopMenuBar></DesktopMenuBar>
-        <div :class="$style.desktop" @click="onClickDesktop">
+        <div :class="$style.desktop" @click="onClickDesktop" ref="desktop">
             <div :class="$style.desktopIcons" id="desktop-icons"></div>
             <component
                 v-for="app in apps"
@@ -13,7 +13,7 @@
                 @activate="onAppActivate"
                 @appMove="onAppMove"
                 @appUpdate="onAppUpdate"
-                @requestExit="onAppRequestExit(app.id)"
+                @appClose="onAppRequestExit(app.id)"
                 @startApp="onAppStartApp"
             />
         </div>
@@ -24,6 +24,7 @@
 import DesktopMenuBar from '@/components/desktop/DesktopMenuBar.vue'
 import { createVNode } from 'vue'
 import { getAppTypeFromName } from '@/app-types'
+import { store } from './desktop-store'
 
 export default {
     name: 'DesktopContainer',
@@ -92,6 +93,7 @@ export default {
 
             const initialPos = (this.currentAppId % 4) * 30 + 20
             const position = { x: initialPos, y: initialPos }
+            const size = { width: 700, height: 500 }
 
             const newApp = createVNode(type, {
                 appId: this.currentAppId,
@@ -103,6 +105,7 @@ export default {
                 data: {
                     title: '',
                     position,
+                    size,
                 },
             })
 
@@ -122,6 +125,20 @@ export default {
     mounted() {
         this.onAppStartApp('about', {})
         this.onAppStartApp('kylo', {})
+
+        // Store the desktop's current size so the Window can access it for resize/reposition actions.
+        const handleResize = () => {
+            const desktopEl = this.$refs.desktop
+            if (!desktopEl) {
+                return
+            }
+
+            store.width = desktopEl.clientWidth
+            store.height = desktopEl.clientHeight
+        }
+
+        window.addEventListener('resize', () => handleResize())
+        handleResize()
     },
 }
 </script>

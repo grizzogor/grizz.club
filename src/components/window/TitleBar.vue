@@ -10,7 +10,11 @@
         @dragover="onDragEnd"
         @dragleave="onDragEnd"
     >
+        <span :class="$style.padLeft"></span>
         <span>{{ txt }}</span>
+        <span :class="$style.closeBtn" @click="handleClickCloseBtn">
+            <i class="bi bi-x" />
+        </span>
     </div>
 </template>
 
@@ -21,7 +25,7 @@ export default {
         txt: String,
         isActive: Boolean,
     },
-    emits: ['move'],
+    emits: ['move', 'close'],
     methods: {
         onDragStart(e) {
             startX = e.clientX
@@ -31,6 +35,9 @@ export default {
             this.$emit('move', { x: e.clientX - startX, y: e.clientY - startY })
             startX = e.clientX
             startY = e.clientY
+        },
+        handleClickCloseBtn() {
+            this.$emit('close')
         },
     },
 }
@@ -46,5 +53,29 @@ let startY = 0
     font-weight: bold;
     text-align: center;
     user-select: none;
+}
+
+.padLeft {
+    float: left;
+    width: 24px;
+    height: 24px;
+}
+
+.closeBtn {
+    float: right;
+    background-color: #393939;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+    transition: background-color 0.15s ease;
+}
+
+.closeBtn:active {
+    background-color: #585858;
 }
 </style>

@@ -4,7 +4,11 @@
             <span :class="$style.blipSmall"></span>
             <span :class="$style.blipTiny"></span>
         </span>
-        <span :class="$style.datetime" ref="datetime"></span>
+        <span
+            :class="$style.datetime"
+            ref="datetime"
+            @click="handleClickDateTime"
+        ></span>
         <span :class="$style.padRight"></span>
     </div>
 </template>
@@ -12,6 +16,16 @@
 <script>
 export default {
     name: 'DesktopMenuBar',
+    data() {
+        return {
+            isoDateFormat: false,
+        }
+    },
+    methods: {
+        handleClickDateTime() {
+            this.isoDateFormat = !this.isoDateFormat
+        },
+    },
     mounted() {
         const format = new Intl.DateTimeFormat('en-US', {
             hour12: false,
@@ -29,7 +43,20 @@ export default {
                 return
             }
 
-            const txt = format.format(new Date())
+            const date = new Date()
+
+            const txt = this.isoDateFormat
+                ? date.getFullYear() +
+                  '-' +
+                  (date.getMonth() + 1).toString().padStart(2, '0') +
+                  '-' +
+                  date.getDate().toString().padStart(2, '0') +
+                  ' ' +
+                  date.getHours().toString().padStart(2, '0') +
+                  ':' +
+                  date.getMinutes().toString().padStart(2, '0')
+                : format.format(date)
+
             if (txt !== lastDatetimeText) {
                 lastDatetimeText = txt
                 this.$refs.datetime.innerText = txt

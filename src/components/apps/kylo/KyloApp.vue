@@ -3,12 +3,14 @@
         :id="`app-${this.appId}`"
         :titleTxt="this.getTitleText()"
         :position="this.getPosition()"
+        :size="this.getSize()"
         :isActive="isActive"
         :style="{
             zIndex: this.zIndex,
         }"
         @mousedown="onMouseDown"
         @move="onMove"
+        @close="onClose"
     >
         <ImageCard
             v-for="stickerUrl of getStickers()"

@@ -7,13 +7,14 @@
         :style="{
             top: `${this.position?.y || 0}px`,
             left: `${this.position?.x || 0}px`,
-            width: `${this.width || 700}px`,
-            height: `${this.height || 600}px`,
+            width: `${this.size?.width || 700}px`,
+            height: `${this.size?.height || 600}px`,
         }"
     >
         <TitleBar
             :txt="titleTxt"
             @move="onMove"
+            @close="onClose"
             :class="{
                 [$style.titlebar]: true,
                 [$style.titlebarScrolled]: isScrolled,
@@ -33,13 +34,12 @@ export default {
     components: {
         TitleBar,
     },
-    emits: ['move'],
+    emits: ['move', 'close'],
     props: {
         titleTxt: String,
         isActive: Boolean,
         position: Object,
-        width: Number,
-        height: Number,
+        size: Object,
     },
     data() {
         return {
@@ -55,6 +55,10 @@ export default {
 
         onInnerScroll(e) {
             this.isScrolled = e.target.scrollTop > 0
+        },
+
+        onClose() {
+            this.$emit('close')
         },
     },
 }
@@ -92,5 +96,16 @@ export default {
 
 .titlebarScrolled {
     box-shadow: 0 0 16px rgba(0, 0, 0, 0.75);
+}
+
+@media (max-width: 700px) {
+    .main {
+        top: 0 !important;
+        left: 0 !important;
+        right: 0 !important;
+        bottom: 0 !important;
+        width: auto !important;
+        height: auto !important;
+    }
 }
 </style>

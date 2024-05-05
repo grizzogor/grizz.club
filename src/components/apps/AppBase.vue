@@ -5,7 +5,7 @@
 <script>
 export default {
     name: 'AppBase',
-    emits: ['activate', 'appMove', 'appUpdate'],
+    emits: ['activate', 'appMove', 'appUpdate', 'appResize'],
     props: {
         appId: Number,
         args: Object,
@@ -22,12 +22,24 @@ export default {
             this.$emit('appMove', this.appId, position)
         },
 
+        onResize(size) {
+            this.$emit('appResize', this.appId, size)
+        },
+
+        onClose() {
+            this.$emit('appClose', this.appId)
+        },
+
         getTitleText() {
             return this.data.title
         },
 
         getPosition() {
             return this.data.position
+        },
+
+        getSize() {
+            return this.data.size
         },
 
         updateTitle(title) {
