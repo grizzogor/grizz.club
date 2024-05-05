@@ -24,9 +24,17 @@ export default {
     methods: {
         handleClickDateTime() {
             this.isoDateFormat = !this.isoDateFormat
+            localStorage.setItem(
+                'isoDateFormat',
+                JSON.stringify(this.isoDateFormat)
+            )
         },
     },
     mounted() {
+        this.isoDateFormat = JSON.parse(
+            localStorage.getItem('isoDateFormat') || 'false'
+        )
+
         const format = new Intl.DateTimeFormat('en-US', {
             hour12: false,
             weekday: 'short',
@@ -54,7 +62,9 @@ export default {
                   ' ' +
                   date.getHours().toString().padStart(2, '0') +
                   ':' +
-                  date.getMinutes().toString().padStart(2, '0')
+                  date.getMinutes().toString().padStart(2, '0') +
+                  ':' +
+                  date.getSeconds().toString().padStart(2, '0')
                 : format.format(date)
 
             if (txt !== lastDatetimeText) {
@@ -63,7 +73,7 @@ export default {
             }
         }
 
-        setInterval(() => updateDateTimeDisplay(), 250)
+        setInterval(() => updateDateTimeDisplay(), 100)
         updateDateTimeDisplay()
     },
 }
@@ -71,7 +81,7 @@ export default {
 
 <style module>
 .main {
-    background-color: black;
+    background-color: #131313;
     color: white;
     font-size: 12px;
     height: 24px;
@@ -83,6 +93,15 @@ export default {
 .datetime {
     user-select: none;
     margin: auto;
+    padding-left: 8px;
+    padding-right: 8px;
+    border-radius: 12px;
+
+    transition: background-color 0.15s ease;
+}
+
+.datetime:hover {
+    background-color: #4a4a4a;
 }
 
 .blips {
