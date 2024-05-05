@@ -121,6 +121,7 @@ export default {
     },
     mounted() {
         this.onAppStartApp('about', {})
+        this.onAppStartApp('kylo', {})
     },
 }
 </script>

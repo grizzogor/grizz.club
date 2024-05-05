@@ -74,7 +74,7 @@ export default {
 }
 
 .active {
-    filter: drop-shadow(0 0 10px rgba(36, 36, 36, 0.5));
+    filter: drop-shadow(0 0 10px rgba(10, 10, 10, 0.5));
 }
 
 .inner {

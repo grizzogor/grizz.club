@@ -1,4 +1,5 @@
 import AboutApp from '@/components/apps/about/AboutApp.vue'
+import KyloApp from '@/components/apps/kylo/KyloApp.vue'
 
 /**
  *
@@ -10,6 +11,8 @@ export function getAppTypeFromName(appName) {
     switch (appName) {
         case 'about':
             return AboutApp
+        case 'kylo':
+            return KyloApp
     }
 
     console.error('No app defined', appName)
