@@ -3,4 +3,13 @@ module.exports = defineConfig({
 	transpileDependencies: true,
 	outputDir: "dist",
 	publicPath: "",
+	css: {
+		loaderOptions: {
+			css: {
+				modules: {
+					localIdentName: "__[name]__[local]__[hash:6]",
+				},
+			},
+		},
+	},
 });

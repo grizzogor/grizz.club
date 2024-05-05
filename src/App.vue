@@ -1,33 +1,75 @@
 <template>
-  <SiteHeader></SiteHeader>
+    <div :class="$style.main">
+        <DesktopBackground></DesktopBackground>
+        <DesktopContainer></DesktopContainer>
+    </div>
 </template>
 
 <script>
-import SiteHeader from '@/components/SiteHeader.vue'
+import DesktopBackground from '@/components/desktop/DesktopBackground.vue'
+import DesktopContainer from '@/components/desktop/DesktopContainer.vue'
 
 export default {
-  name: 'App',
-  components: {
-    SiteHeader
-  }
+    name: 'App',
+    components: {
+        DesktopBackground,
+        DesktopContainer,
+    },
 }
+
+document.addEventListener('dragover', (event) => {
+    event.preventDefault()
+})
 </script>
 
 <style>
-#app {
-  /* font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px; */
+@font-face {
+    font-family: 'CantarellFont';
+    src: local('Cantarell'), url('assets/font/cantarell.ttf');
+}
 
+html {
+    font-family: CantarellFont, Arial, Helvetica, sans-serif;
+    font-size: 12px;
 }
 
 body {
-  background-image: url('./assets/img/bg.gif');
-  color: white;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 16px;
+    margin: 0;
+    background-color: #242424;
+    color: #eeeeee;
+}
+</style>
+
+<style module>
+.main {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+
+    animation-name: desktop-intro;
+    animation-delay: 0.25s;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+
+    border-radius: 50px;
+    opacity: 0;
+    transform: scaleX(80%) scaleY(80%);
+}
+
+@keyframes desktop-intro {
+    0% {
+        opacity: 0;
+    }
+
+    40% {
+        opacity: 0.75;
+    }
+
+    100% {
+        border-radius: 0px;
+        opacity: 1;
+        transform: none;
+    }
 }
 </style>
