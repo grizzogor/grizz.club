@@ -13,7 +13,7 @@
         @close="onClose"
     >
         <div :class="$style.heading">
-            <img src="@/assets/apps/kylo/stickers/KyloHappy.png" />
+            <img src="@/assets/apps/about/KyloHappy.png" />
             <h2>Welcome to grizz.club</h2>
         </div>
 

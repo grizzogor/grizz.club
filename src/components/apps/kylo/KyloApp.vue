@@ -16,7 +16,7 @@
             <div :class="$style.heading">
                 <img
                     :class="$style.headingImg"
-                    src="@/assets/apps/kylo/stickers/KyloHappy.png"
+                    src="@/assets/apps/kylo/KyloHappy.png"
                     @mouseenter="handleMouseEnterHeadingImg"
                     @mouseleave="handleMouseLeaveHeadingImg"
                 />
@@ -166,7 +166,7 @@ export default {
         getStickers() {
             return stickers.map((x) => {
                 return {
-                    imgUrl: kyloStickersContext('./stickers/' + x.imgUrl),
+                    imgUrl: 'im/' + x.imgUrl,
                     name: x.name,
                     artist: x.artist,
                     artistUrl: x.artistUrl,
@@ -176,18 +176,18 @@ export default {
 
         handleMouseEnterHeadingImg(e) {
             const imgEl = e.target
-            imgEl.src = kyloStickersContext('./stickers/KyloPog.png')
+            imgEl.src = kyloStickersContext('./KyloPog.png')
 
             setTimeout(() => {
                 if (imgEl.src.includes('Pog')) {
-                    imgEl.src = kyloStickersContext('./stickers/KyloHappy.png')
+                    imgEl.src = kyloStickersContext('./KyloHappy.png')
                 }
             }, 250)
         },
 
         handleMouseLeaveHeadingImg(e) {
             const imgEl = e.target
-            imgEl.src = kyloStickersContext('./stickers/KyloHappy.png')
+            imgEl.src = kyloStickersContext('./KyloHappy.png')
         },
     },
     mounted() {
