@@ -28,6 +28,12 @@ document.addEventListener('dragover', (event) => {
     src: local('Cantarell'), url('assets/font/cantarell.ttf');
 }
 
+@font-face {
+    font-family: 'MonospaceFont';
+    src: local('Source Code Pro'), url('assets/font/sourcecodepro.ttf'),
+        local('monospace');
+}
+
 html {
     font-family: CantarellFont, Arial, Helvetica, sans-serif;
     font-size: 12px;
@@ -68,6 +74,15 @@ button:hover {
 
 button:active {
     background-color: #6e6e6e;
+}
+
+/* Disable default focus border around contenteditable elements */
+[contenteditable]:focus {
+    outline: 0px solid transparent;
+}
+
+pre {
+    font-family: MonospaceFont;
 }
 </style>
 

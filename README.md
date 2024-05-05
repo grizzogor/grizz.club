@@ -48,7 +48,13 @@ yarn lint
     -   CC BY-SA 3.0
 
 -   Some of the icons are taken from the Ubuntu/yaru theme:
+
     -   https://github.com/ubuntu/yaru
     -   CC-BY-SA-4.0
+
+-   Bootstrap icons:
+
+    -   https://icons.getbootstrap.com/
+    -   MIT
 
 Additional attributions for actual content of the website are contained in the website itself. Visit the [page](https://nilllzz.github.io/grizz.club) and view different content to see attributions and artists.

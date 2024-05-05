@@ -17,6 +17,15 @@
                     @activate="onIconActivate"
                     @launch="onAppStartApp('kylo', {})"
                 />
+                <DesktopIcon
+                    :isActive="activeIconId === 'attributions.txt'"
+                    icon="txt"
+                    text="attributions.txt"
+                    @activate="onIconActivate"
+                    @launch="
+                        onAppStartApp('editor', { file: 'attributions.txt' })
+                    "
+                />
             </div>
             <component
                 v-for="app in apps"
