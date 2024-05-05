@@ -16,6 +16,16 @@
                 }"
             />
         </div>
+
+        <div>
+            <div :class="$style.name">{{ name }}</div>
+            <div>
+                by
+                <a :href="artistUrl" target="_blank">
+                    {{ artist }}
+                </a>
+            </div>
+        </div>
     </div>
 </template>
 
@@ -49,6 +59,7 @@ export default {
         handleImgMouseLeave() {
             this.imgRotateX = 0
             this.imgRotateY = 0
+            this.imgBrightness = 1
         },
     },
 }
@@ -56,12 +67,18 @@ export default {
 
 <style module>
 .card {
+    padding: 18px;
+    border-radius: 12px;
+    background-color: #363636;
+    text-align: center;
+    filter: drop-shadow(0 0 2px rgba(0, 0, 0, 0.5));
 }
 
 .imgContainer {
     width: 150px;
     height: 150px;
     overflow: hidden;
+    margin-bottom: 4px;
 }
 
 .img {
@@ -69,6 +86,10 @@ export default {
     width: 100%;
     height: 100%;
 
-    transition: transform 0.1s ease;
+    transition: transform 0.1s ease, filter 0.1s ease;
+}
+
+.name {
+    font-size: 14px;
 }
 </style>
