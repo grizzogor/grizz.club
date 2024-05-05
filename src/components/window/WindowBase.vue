@@ -13,6 +13,7 @@
     >
         <TitleBar
             :txt="titleTxt"
+            :isActive="isActive"
             @move="onMove"
             @close="onClose"
             :class="{
@@ -48,8 +49,8 @@ export default {
     },
     methods: {
         onMove(diff) {
-            const x = Math.max(0, this.position.x + diff.x)
-            const y = Math.max(0, this.position.y + diff.y)
+            const x = this.position.x + diff.x
+            const y = this.position.y + diff.y
             this.$emit('move', { x, y })
         },
 
@@ -100,12 +101,17 @@ export default {
 
 @media (max-width: 700px) {
     .main {
+        /* Full screen the window */
         top: 0 !important;
         left: 0 !important;
         right: 0 !important;
         bottom: 0 !important;
         width: auto !important;
         height: auto !important;
+        /* Fully fit within constraints */
+        border-radius: 0;
+        /* Give some additional space at the bottom in case of overlaying browser elements on mobile */
+        padding-bottom: 24px;
     }
 }
 </style>

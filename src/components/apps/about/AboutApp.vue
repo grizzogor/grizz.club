@@ -122,6 +122,7 @@
 <script>
 import WindowBase from '@/components/window/WindowBase.vue'
 import AppBase from '@/components/apps/AppBase.vue'
+import { store } from '@/components/desktop/desktop-store'
 
 export default {
     name: 'AboutApp',
@@ -132,7 +133,15 @@ export default {
     mounted() {
         this.updateTitle('About Me')
 
-        // Whatever
+        // Set size relative to screen size, and then center the window.
+        const width = Math.max(500, Math.min(1000, store.width * 0.75))
+        const height = Math.max(300, Math.min(700, store.height * 0.75))
+
+        this.onResize({ width, height })
+        this.onMove({
+            x: store.width / 2 - width / 2,
+            y: store.height / 2 - height / 2,
+        })
     },
 }
 </script>

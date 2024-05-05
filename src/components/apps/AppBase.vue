@@ -5,7 +5,7 @@
 <script>
 export default {
     name: 'AppBase',
-    emits: ['activate', 'appMove', 'appUpdate', 'appResize'],
+    emits: ['activate', 'appMove', 'appUpdate', 'appResize', 'appClose'],
     props: {
         appId: Number,
         args: Object,

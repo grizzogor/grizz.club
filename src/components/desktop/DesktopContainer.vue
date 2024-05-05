@@ -12,6 +12,7 @@
                 :zIndex="getAppZIndex(app.id)"
                 @activate="onAppActivate"
                 @appMove="onAppMove"
+                @appResize="onAppResize"
                 @appUpdate="onAppUpdate"
                 @appClose="onAppRequestExit(app.id)"
                 @startApp="onAppStartApp"
@@ -64,7 +65,30 @@ export default {
         onAppMove(appId, position) {
             for (const app of this.apps) {
                 if (app.id === appId) {
-                    app.data.position = position
+                    let x = Math.min(
+                        Math.max(position.x, -app.data.size.width + 80),
+                        store.width - 80
+                    )
+                    let y = Math.min(Math.max(position.y, 0), store.height - 44)
+
+                    app.data.position = { x, y }
+                }
+            }
+        },
+
+        onAppResize(appId, size) {
+            for (const app of this.apps) {
+                if (app.id === appId) {
+                    let width = Math.min(
+                        size.width,
+                        store.width - app.data.position.x
+                    )
+                    let height = Math.min(
+                        size.height,
+                        store.height - app.data.position.y
+                    )
+
+                    app.data.size = { width, height }
                 }
             }
         },

@@ -11,7 +11,7 @@
         @dragleave="onDragEnd"
     >
         <span :class="$style.padLeft"></span>
-        <span>{{ txt }}</span>
+        <span :class="$style.titleTxt">{{ txt }}</span>
         <span :class="$style.closeBtn" @click="handleClickCloseBtn">
             <i class="bi bi-x" />
         </span>
@@ -53,6 +53,16 @@ let startY = 0
     font-weight: bold;
     text-align: center;
     user-select: none;
+}
+
+.titleTxt {
+    color: #a5a5a5;
+
+    transition: color 0.15s ease;
+}
+
+.mainActive > .titleTxt {
+    color: #eeeeee;
 }
 
 .padLeft {

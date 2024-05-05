@@ -13,9 +13,13 @@
         @close="onClose"
     >
         <ImageCard
-            v-for="stickerUrl of getStickers()"
-            :key="stickerUrl"
-            :imgUrl="stickerUrl"
+            v-for="stickerData of getStickers()"
+            :key="stickerData.name"
+            :imgUrl="stickerData.imgUrl"
+            :name="stickerData.name"
+            :artist="stickerData.artist"
+            :artistUrl="stickerData.artistUrl"
+            type="sticker"
         />
     </WindowBase>
 </template>
@@ -24,6 +28,15 @@
 import WindowBase from '@/components/window/WindowBase.vue'
 import AppBase from '@/components/apps/AppBase.vue'
 import ImageCard from '@/components/apps/kylo/ImageCard.vue'
+
+const stickers = [
+    {
+        imgUrl: 'KyloAngry.png',
+        name: 'Kylo Angry',
+        artist: 'chequerootlurks',
+        artistUrl: 'https://chequerootlurks.tumblr.com/',
+    },
+]
 
 export default {
     name: 'KyloApp',
@@ -35,32 +48,24 @@ export default {
     methods: {
         getStickers() {
             const images = require.context(
-                '@/assets/apps/kylo/stickers',
-                false,
+                '@/assets/apps/kylo',
+                true, // Subdirectories
                 /\.png$/
             )
 
-            return [
-                'KyloAngry.png',
-                'KyloEvil.png',
-                'KyloEyeroll.png',
-                'KyloHappy.png',
-                'KyloHeart.png',
-                'KyloKisser.png',
-                'KyloOwO.png',
-                'KyloPanic.png',
-                'KyloPog.png',
-                'KyloPuppyEyes.png',
-                'KyloSad.png',
-                'KyloScared.png',
-                'KyloTearsOfJoy.png',
-                'KyloThinking.png',
-                'KyloWink.png',
-            ].map((x) => images('./' + x))
+            return stickers.map((x) => {
+                return {
+                    imgUrl: images('./stickers/' + x.imgUrl),
+                    name: x.name,
+                    artist: x.artist,
+                    artistUrl: x.artistUrl,
+                }
+            })
         },
     },
     mounted() {
         this.updateTitle('Kylo Byte')
+        this.onResize({ width: 900, height: 600 })
     },
 }
 </script>
