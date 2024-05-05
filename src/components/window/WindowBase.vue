@@ -102,7 +102,7 @@ export default {
     position: relative;
     z-index: 1;
     overflow: scroll;
-    height: calc(100% - 37px);
+    height: calc(100% - 24px);
 }
 
 .titlebar {

@@ -56,10 +56,11 @@ export default {
 <style module>
 .main {
     width: calc(100% - 8px);
-    height: calc(100% - 8px);
+    height: calc(100% - 16px);
     background-color: #141414;
     overflow: hidden;
-    margin: 4px;
+    margin-left: 4px;
+    margin-right: 4px;
     padding: 4px;
     box-sizing: border-box;
     border-bottom-left-radius: 8px;
@@ -71,5 +72,10 @@ export default {
     height: 100%;
     margin: 0;
     overflow: scroll;
+}
+
+.editor::selection {
+    background: #a970ce;
+    color: #ffffff;
 }
 </style>
