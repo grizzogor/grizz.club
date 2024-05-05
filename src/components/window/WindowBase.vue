@@ -99,7 +99,7 @@ export default {
     box-shadow: 0 0 16px rgba(0, 0, 0, 0.75);
 }
 
-@media (max-width: 700px) {
+@media (max-width: 700px), (max-height: 500px) {
     .main {
         /* Full screen the window */
         top: 0 !important;

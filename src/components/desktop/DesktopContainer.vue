@@ -157,8 +157,26 @@ export default {
                 return
             }
 
+            const prevWidth = store.width
+            const prevHeight = store.height
+
             store.width = desktopEl.clientWidth
             store.height = desktopEl.clientHeight
+
+            const changeWidth = store.width / prevWidth
+            const changeHeight = store.height / prevHeight
+            for (const app of this.apps) {
+                app.data.size = {
+                    width: Math.max(
+                        600,
+                        Math.min(1200, app.data.size.width * changeWidth)
+                    ),
+                    height: Math.max(
+                        400,
+                        Math.min(900, app.data.size.height * changeHeight)
+                    ),
+                }
+            }
         }
 
         window.addEventListener('resize', () => handleResize())
