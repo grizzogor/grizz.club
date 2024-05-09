@@ -18,6 +18,13 @@
                     @launch="handleOpenFiles"
                 />
                 <DesktopIcon
+                    :isActive="activeIconId === 'Blog'"
+                    icon="blog"
+                    text="Blog"
+                    @activate="onIconActivate"
+                    @launch="handleOpenBlog"
+                />
+                <DesktopIcon
                     :isActive="activeIconId === 'kylo_byte.sh'"
                     icon="kylo"
                     text="kylo_byte.sh"
@@ -32,6 +39,14 @@
                     @launch="
                         onAppStartApp('editor', { file: 'attributions.txt' })
                     "
+                />
+                <DesktopIcon
+                    v-if="showBerry"
+                    :isActive="activeIconId === 'Berry Blueflame'"
+                    icon="berry"
+                    text="Berry Blueflame"
+                    @activate="onIconActivate"
+                    @launch="onAppStartApp('berry', {})"
                 />
             </div>
             <component
@@ -72,6 +87,7 @@ export default {
             activeAppId: -1,
             activeIconId: '',
             apps: [],
+            showBerry: false,
         }
     },
     methods: {
@@ -189,6 +205,10 @@ export default {
                 .open('https://nx.grizz.club/s/JKdYRzMkjSnzHca', '_blank')
                 .focus()
         },
+
+        handleOpenBlog() {
+            window.open('https://spy.tf/author/grizzogor/', '_blank').focus()
+        },
     },
     mounted() {
         // Launch requested app by default based on query params:
@@ -210,7 +230,15 @@ export default {
                     }
                 }
                 break
+            case 'berry':
+                this.onAppStartApp('berry', {})
+                localStorage.setItem('show-berry', JSON.stringify(true))
+                break
         }
+
+        this.showBerry = JSON.parse(
+            localStorage.getItem('show-berry') || 'false'
+        )
 
         // Store the desktop's current size so the Window can access it for resize/reposition actions.
         const handleResize = () => {
