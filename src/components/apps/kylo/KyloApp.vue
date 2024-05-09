@@ -28,7 +28,16 @@
                     </p>
                     <p>
                         For more information about the specifications of Kylo,
-                        visit my Nextcloud Note about him.
+                        visit my
+                        <a
+                            href="https://nx.grizz.club/s/cxB6PcY5QxsAScN"
+                            rel="noopener noreferrer"
+                            target="_blank"
+                        >
+                            Nextcloud Note
+                            <i class="bi bi-box-arrow-up-right" />
+                        </a>
+                        about him.
                     </p>
                 </div>
             </div>

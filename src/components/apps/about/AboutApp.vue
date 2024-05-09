@@ -15,6 +15,16 @@
         <div :class="$style.heading">
             <img src="@/assets/apps/about/KyloHappy.png" />
             <h2>Welcome to grizz.club</h2>
+            <div :class="$style.tags">
+                <img src="@/assets/img/tags/american.gif" />
+                <img src="@/assets/img/tags/hoosierbutton.png" />
+                <img src="@/assets/img/tags/hehim.png" />
+                <img src="@/assets/img/tags/cli.gif" />
+                <img src="@/assets/img/tags/vim_the_editor.png" />
+                <img src="@/assets/img/tags/pride.gif" />
+                <img src="@/assets/img/tags/fedora_powered.png" />
+                <img src="@/assets/img/tags/nginx-powered.png" />
+            </div>
         </div>
 
         <div :class="$style.mainContentOuter">
@@ -90,6 +100,7 @@
                         <span>
                             <a
                                 href="https://mstdn.social/@grizz"
+                                rel="noopener noreferrer"
                                 target="_blank"
                             >
                                 grizz@mstdn.social
@@ -101,6 +112,7 @@
                         <span>
                             <a
                                 href="https://lemmy.world/u/grizz"
+                                rel="noopener noreferrer"
                                 target="_blank"
                             >
                                 @grizz@lemmy.world
@@ -112,6 +124,7 @@
                         <span>
                             <a
                                 href="https://www.youtube.com/@grizzogor"
+                                rel="noopener noreferrer"
                                 target="_blank"
                             >
                                 @grizzogor
@@ -126,6 +139,7 @@
                         <span>
                             <a
                                 href="https://psnprofiles.com/grizzogor"
+                                rel="noopener noreferrer"
                                 target="_blank"
                             >
                                 grizzogor (PSNProfiles)
@@ -141,6 +155,7 @@
                         <span>
                             <a
                                 href="https://steamcommunity.com/id/grizzogor/"
+                                rel="noopener noreferrer"
                                 target="_blank"
                             >
                                 grizzogor
@@ -202,6 +217,16 @@ export default {
     width: 140px;
     height: 140px;
     display: block;
+}
+
+.tags {
+    display: flex;
+    gap: 4px;
+    max-width: 400px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: 16px;
+    margin-right: 16px;
 }
 
 .mainContentOuter {
