@@ -158,11 +158,12 @@ h2 {
     flex-direction: column;
     align-items: center;
 
-    transition: filter 0.25s ease;
+    transition: filter 0.25s ease, transform 0.25s ease;
 }
 
 .favorite:hover {
     filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.75));
+    transform: translateY(-4px);
 }
 
 .favoriteImgContainer {
@@ -208,7 +209,7 @@ h2 {
 }
 
 .favoriteImgOverlay:hover {
-    background-color: rgba(36, 36, 36, 0.25);
+    background-color: rgba(169, 112, 206, 0.25);
     opacity: 1;
 }
 

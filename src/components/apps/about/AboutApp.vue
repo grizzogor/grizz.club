@@ -32,6 +32,11 @@
                     title="He / Him"
                 />
                 <img
+                    src="@/assets/img/tags/aro_ace.png"
+                    alt="aro ace tag"
+                    title="aro ace"
+                />
+                <img
                     src="@/assets/img/tags/cli.gif"
                     alt="CLI tag"
                     title="CLI"
@@ -50,11 +55,6 @@
                     src="@/assets/img/tags/fedora_powered.png"
                     alt="Fedora tag"
                     title="Fedora powered"
-                />
-                <img
-                    src="@/assets/img/tags/nginx-powered.png"
-                    alt="NGINX tag"
-                    title="NGINX powered"
                 />
             </div>
         </div>
