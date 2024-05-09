@@ -12,12 +12,28 @@
                         @launch="onAppStartApp('about', {})"
                     />
                     <DesktopIcon
-                        :isActive="activeIconId === 'Files'"
+                        :isActive="activeIconId === 'Kylo Byte Files'"
                         icon="files"
-                        text="Files"
+                        text="Kylo Byte Files"
                         is-link
                         @activate="onIconActivate"
-                        @launch="handleOpenFiles"
+                        @launch="
+                            handleOpenLink(
+                                'https://nx.grizz.club/s/JKdYRzMkjSnzHca'
+                            )
+                        "
+                    />
+                    <DesktopIcon
+                        :isActive="activeIconId === 'Downloads'"
+                        icon="downloads"
+                        text="Downloads"
+                        is-link
+                        @activate="onIconActivate"
+                        @launch="
+                            handleOpenLink(
+                                'https://nx.grizz.club/s/LCGcfdBo5T5s9t2'
+                            )
+                        "
                     />
                     <DesktopIcon
                         :isActive="activeIconId === 'Blog'"
@@ -25,7 +41,9 @@
                         text="Blog"
                         is-link
                         @activate="onIconActivate"
-                        @launch="handleOpenBlog"
+                        @launch="
+                            handleOpenLink('https://spy.tf/author/grizzogor/')
+                        "
                     />
                     <DesktopIcon
                         :isActive="activeIconId === 'Favorites'"
@@ -217,14 +235,8 @@ export default {
             return this.appIdStack.length - index
         },
 
-        handleOpenFiles() {
-            window
-                .open('https://nx.grizz.club/s/JKdYRzMkjSnzHca', '_blank')
-                .focus()
-        },
-
-        handleOpenBlog() {
-            window.open('https://spy.tf/author/grizzogor/', '_blank').focus()
+        handleOpenLink(url) {
+            window.open(url, '_blank').focus()
         },
     },
     mounted() {
