@@ -59,7 +59,10 @@
 
                     if (outputDone === 100) {
                         await sleep(1000);
-                        window.location = '/?app=kylo';
+
+                        let urlPath = window.location.pathname;
+                        urlPath = urlPath.replace('/kylo.htm', '/?app=kylo')
+                        window.location = urlPath;
                     }
 
                     const redirectLinkEl = document.getElementById('termredirect');
