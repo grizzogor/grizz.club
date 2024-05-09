@@ -40,7 +40,8 @@ yarn lint
 
 ## Attributions
 
-![attributions](https://github.com/nilllzz/grizz.club/assets/2119926/984e1422-133b-4c05-bce4-aaf406081137)
+![attribution](https://github.com/grizzogor/grizz.club/assets/10983868/948b8719-5e2d-47af-b377-73e4579d78eb)
+
 
 -   The "desktop" wallpaper is taken from the GNOME/gnome-backgrounds repository:
 
