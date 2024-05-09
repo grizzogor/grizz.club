@@ -11,6 +11,13 @@
                     @launch="onAppStartApp('about', {})"
                 />
                 <DesktopIcon
+                    :isActive="activeIconId === 'Files'"
+                    icon="files"
+                    text="Files"
+                    @activate="onIconActivate"
+                    @launch="handleOpenFiles"
+                />
+                <DesktopIcon
                     :isActive="activeIconId === 'kylo_byte.sh'"
                     icon="kylo"
                     text="kylo_byte.sh"
@@ -175,6 +182,12 @@ export default {
         getAppZIndex(appId) {
             const index = this.appIdStack.indexOf(appId)
             return this.appIdStack.length - index
+        },
+
+        handleOpenFiles() {
+            window
+                .open('https://nx.grizz.club/s/JKdYRzMkjSnzHca', '_blank')
+                .focus()
         },
     },
     mounted() {
