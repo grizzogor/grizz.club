@@ -75,7 +75,7 @@ export default {
     border-color: #333333;
     overflow: hidden;
 
-    transition: filter 0.15s ease;
+    transition: filter 0.15s ease, background-color 0.15s ease;
 
     transform: scale(0.9);
     opacity: 0.75;
@@ -96,6 +96,8 @@ export default {
 
 .active {
     filter: drop-shadow(0 0 10px rgba(10, 10, 10, 0.5));
+    background-color: rgba(36, 36, 36, 0.85);
+    backdrop-filter: blur(16px);
 }
 
 .inner {
@@ -129,6 +131,12 @@ export default {
         border-radius: 0;
         /* Give some additional space at the bottom in case of overlaying browser elements on mobile */
         padding-bottom: 24px;
+    }
+
+    .active {
+        filter: none;
+        background-color: #242424;
+        backdrop-filter: none;
     }
 }
 </style>

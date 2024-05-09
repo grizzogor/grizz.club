@@ -1,9 +1,14 @@
 <template>
     <div :class="$style.background">
         <img
-            :class="$style.backgroundImg"
-            src="@/assets/img/background.jpg"
-            alt="Desktop Background"
+            src="@/assets/img/desktop/wavetr.png"
+            :class="{ [$style.wavetr]: true, [$style.wave]: true }"
+            tag="Wave background top right"
+        />
+        <img
+            src="@/assets/img/desktop/wavetr.png"
+            :class="{ [$style.wavebl]: true, [$style.wave]: true }"
+            tag="Wave background bottom left"
         />
     </div>
 </template>
@@ -22,22 +27,32 @@ export default {
     bottom: 0;
     right: 0;
     z-index: 0;
-    background-color: #a13978;
+    background-color: #2d273d;
 
     transition: background-color 0.1s ease;
 }
 
-.backgroundImg {
-    display: block;
-    width: 100%;
-    height: 100%;
+.wave {
+    position: absolute;
+    height: min(75vh, 75vw);
     opacity: 0;
 
     animation-name: backgroundImgIntro;
-    animation-delay: 1s;
+    animation-delay: 0.75s;
     animation-duration: 0.5s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
+}
+
+.wavetr {
+    top: 0;
+    right: 0;
+}
+
+.wavebl {
+    bottom: 0;
+    left: 0;
+    transform: rotateZ(180deg);
 }
 
 @keyframes backgroundImgIntro {
