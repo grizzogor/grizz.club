@@ -220,4 +220,14 @@ export default {
     color: #a5a5a5;
     text-align: center;
 }
+
+@media (max-width: 700px), (max-height: 500px) {
+    .favoriteList {
+        justify-content: center;
+    }
+
+    .section > h3 {
+        text-align: center;
+    }
+}
 </style>
