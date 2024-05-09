@@ -13,7 +13,7 @@
         @close="onClose"
     >
         <div v-if="favorites">
-            <h2>
+            <h2 :class="$style.heading">
                 <i
                     class="bi bi-star-fill"
                     :style="{ color: `var(--kylo-orange)` }"
@@ -130,15 +130,8 @@ export default {
     margin-left: 8px;
 }
 
-h2 {
-    margin-left: 24px;
-}
-
 .heading {
-    margin-top: 16px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    margin-left: 24px;
 }
 
 .favoriteList {
