@@ -112,7 +112,7 @@ export default {
     },
     mounted() {
         this.updateTitle('Favorites')
-        this.onResize({ width: 1050, height: 700 })
+        this.onResize({ width: 875, height: 700 })
 
         const data = fileContext('./data.json')
         this.favorites = data.favorites
