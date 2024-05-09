@@ -37,6 +37,7 @@ document.addEventListener('dragover', (event) => {
 html {
     font-family: CantarellFont, Arial, Helvetica, sans-serif;
     font-size: 12px;
+    scrollbar-color: #a5a5a5 transparent;
 }
 
 body {

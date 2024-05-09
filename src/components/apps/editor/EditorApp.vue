@@ -56,7 +56,7 @@ export default {
 <style module>
 .main {
     width: calc(100% - 8px);
-    height: calc(100% - 16px);
+    height: calc(100% - 6px);
     background-color: #141414;
     overflow: hidden;
     margin-left: 4px;
@@ -71,7 +71,8 @@ export default {
     width: 100%;
     height: 100%;
     margin: 0;
-    overflow: scroll;
+    overflow: auto;
+    scrollbar-width: thin;
 }
 
 .editor::selection {

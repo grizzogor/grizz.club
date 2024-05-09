@@ -101,8 +101,9 @@ export default {
 .inner {
     position: relative;
     z-index: 1;
-    overflow: scroll;
-    height: calc(100% - 24px);
+    overflow: auto;
+    scrollbar-width: thin;
+    height: calc(100% - 36px);
 }
 
 .titlebar {
