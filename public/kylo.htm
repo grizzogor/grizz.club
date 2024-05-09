@@ -13,7 +13,7 @@
 
 <body>
     <noscript>
-        <a href="/">Click here to be redirected.</a>
+        <a href="/?app=kylo">Click here to be redirected.</a>
     </noscript>
 
     <div id="term">
@@ -23,7 +23,7 @@
         </div>
         <div>
             <pre id="termoutput"></pre>
-            <a class="redirect" href="/" style="display: none;" id="termredirect">or click here</a>
+            <a class="redirect" style="display: none;" id="termredirect">or click here</a>
         </div>
     </div>
 
@@ -56,16 +56,17 @@
                         }
                     }
                     outputEl.innerText = '[' + outputText + '] redirecting... ' + outputDone.toString().padStart(3, ' ') + '%';
+                    let urlPath = window.location.pathname;
+                    urlPath = urlPath.replace('/kylo.htm', '/?app=kylo')
 
                     if (outputDone === 100) {
                         await sleep(1000);
 
-                        let urlPath = window.location.pathname;
-                        urlPath = urlPath.replace('/kylo.htm', '/?app=kylo')
                         window.location = urlPath;
                     }
 
                     const redirectLinkEl = document.getElementById('termredirect');
+                    redirectLinkEl.setAttribute('href', urlPath);
                     redirectLinkEl.style.display = 'inline';
                 }
             }, 100);
