@@ -17,44 +17,12 @@
             <h2>Welcome to grizz.club</h2>
             <div :class="$style.tags">
                 <img
-                    src="@/assets/img/tags/american.gif"
-                    alt="American tag"
-                    title="American"
-                />
-                <img
-                    src="@/assets/img/tags/hoosierbutton.png"
-                    alt="Hoosierbutton tag"
-                    title="Hoosier"
-                />
-                <img
-                    src="@/assets/img/tags/hehim.png"
-                    alt="He/Him tag"
-                    title="He / Him"
-                />
-                <img
-                    src="@/assets/img/tags/aro_ace.png"
-                    alt="aro ace tag"
-                    title="aro ace"
-                />
-                <img
-                    src="@/assets/img/tags/cli.gif"
-                    alt="CLI tag"
-                    title="CLI"
-                />
-                <img
-                    src="@/assets/img/tags/vim_the_editor.png"
-                    alt="VIM tag"
-                    title="vim the editor"
-                />
-                <img
-                    src="@/assets/img/tags/pride.gif"
-                    alt="Pride tag"
-                    title="Pride"
-                />
-                <img
-                    src="@/assets/img/tags/fedora_powered.png"
-                    alt="Fedora tag"
-                    title="Fedora powered"
+                    v-for="tag of tags"
+                    :class="$style.tag"
+                    :key="tag.title"
+                    :src="getTagImgUrl(tag.imgUrl)"
+                    :title="tag.title"
+                    :alt="`${tag.title} tag`"
                 />
             </div>
         </div>
@@ -274,15 +242,30 @@ import WindowBase from '@/components/window/WindowBase.vue'
 import AppBase from '@/components/apps/AppBase.vue'
 import { store } from '@/components/desktop/desktop-store'
 
+const fileContext = require.context(
+    '@/assets/apps/about',
+    true, // Subdirectories
+    /\.(?:png|json|jpg|gif)$/
+)
+
 export default {
     name: 'AboutApp',
     extends: AppBase,
     components: {
         WindowBase,
     },
+    data() {
+        return {
+            tags: [],
+        }
+    },
     methods: {
         handleClickLaunchKylo() {
             this.$emit('startApp', 'kylo', {})
+        },
+
+        getTagImgUrl(imgUrl) {
+            return fileContext(imgUrl)
         },
     },
     mounted() {
@@ -297,6 +280,9 @@ export default {
             x: store.width / 2 - width / 2,
             y: store.height / 2 - height / 2,
         })
+
+        const data = fileContext('./data.json')
+        this.tags = data.tags
     },
 }
 </script>
@@ -324,6 +310,34 @@ export default {
     justify-content: center;
     margin-left: 16px;
     margin-right: 16px;
+}
+
+.tag {
+    image-rendering: pixelated;
+    transition: transform 0.05s ease, filter 0.05s ease;
+}
+
+.tag:hover {
+    transform: scale(2);
+    filter: drop-shadow(0 0 8px rgba(169, 112, 206, 0.75));
+
+    animation-name: tagsimg-anim;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes tagsimg-anim {
+    0% {
+        filter: drop-shadow(0 0 8px rgba(169, 112, 206, 0.75));
+    }
+
+    50% {
+        filter: drop-shadow(0 0 8px rgba(255, 115, 0, 0.75));
+    }
+
+    100% {
+        filter: drop-shadow(0 0 8px rgba(169, 112, 206, 0.75));
+    }
 }
 
 .mainContentOuter {

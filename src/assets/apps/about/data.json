@@ -1,0 +1,36 @@
+{
+    "tags": [
+        {
+            "imgUrl": "./american.gif",
+            "title": "American"
+        },
+        {
+            "imgUrl": "./hoosierbutton.png",
+            "title": "Hoosier"
+        },
+        {
+            "imgUrl": "./hehim.png",
+            "title": "He / Him"
+        },
+        {
+            "imgUrl": "./aro_ace.png",
+            "title": "Aro-Ace"
+        },
+        {
+            "imgUrl": "./cli.gif",
+            "title": "CLI"
+        },
+        {
+            "imgUrl": "./vim_the_editor.png",
+            "title": "vim the editor"
+        },
+        {
+            "imgUrl": "./pride.gif",
+            "title": "Pride"
+        },
+        {
+            "imgUrl": "./fedora_powered.png",
+            "title": "Fedora powered"
+        }
+    ]
+}
