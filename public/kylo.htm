@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+    <title>
+        Redirecting...
+    </title>
+</head>
+
+<body>
+    <noscript>
+        <a href="/">Click here to be redirected.</a>
+    </noscript>
+
+    <div id="term">
+        <div>
+            <span class="user">guest@grizz.club</span><span>:</span><span class="termpath">~</span><span>$ </span>
+            <span id="terminput"></span><span class="termblock" id="termblock">█</span>
+        </div>
+        <div>
+            <pre id="termoutput"></pre>
+            <a class="redirect" href="/" style="display: none;" id="termredirect">or click here</a>
+        </div>
+    </div>
+
+    <script>
+        const sleep = (sleepMs) => {
+            return new Promise(resolve => {
+                setTimeout(() => {
+                    resolve();
+                }, sleepMs)
+            });
+        }
+
+        let outputDone = 0;
+
+        const printOutput = async () => {
+            await sleep(500);
+
+            setInterval(async () => {
+                if (outputDone < 100) {
+                    outputDone++;
+
+                    const outputEl = document.getElementById('termoutput')
+                    let outputText = '';
+                    const outputDoneLen = Math.floor(outputDone / 5);
+                    for (let i = 0; i < 20; i++) {
+                        if (outputDoneLen >= i) {
+                            outputText += '=';
+                        } else {
+                            outputText += ' ';
+                        }
+                    }
+                    outputEl.innerText = '[' + outputText + '] redirecting... ' + outputDone.toString().padStart(3, ' ') + '%';
+
+                    if (outputDone === 100) {
+                        await sleep(1000);
+                        window.location = '/?app=kylo';
+                    }
+
+                    const redirectLinkEl = document.getElementById('termredirect');
+                    redirectLinkEl.style.display = 'inline';
+                }
+            }, 100);
+        };
+
+        const termInputText = "./kylo_byte.sh";
+
+        const animInput = async () => {
+            await sleep(1000);
+
+            let termInputTextIndex = 0;
+
+            setInterval(async () => {
+                if (termInputTextIndex === termInputText.length) {
+                    const termblockEl = document.getElementById('termblock');
+                    if (termblockEl) {
+                        await sleep(1000);
+                        termblockEl.remove();
+                        printOutput();
+                    }
+                    return;
+                }
+
+                const termInputEl = document.getElementById('terminput');
+                termInputEl.innerText = termInputEl.innerText + termInputText[termInputTextIndex];
+                termInputTextIndex++;
+            }, 50);
+        }
+        animInput();
+
+    </script>
+
+    <style>
+        body {
+            background-color: black;
+            color: #eeeeee;
+            font-family: monospace;
+            font-size: 20px;
+        }
+
+        pre {
+            margin: 0;
+            padding: 0;
+            display: inline-block;
+        }
+
+        .user {
+            color: #26c6da;
+        }
+
+        .termpath {
+            color: #43d426;
+        }
+
+        .termblock {
+            animation-name: termblock-anim;
+            animation-duration: 0.5s;
+            animation-iteration-count: infinite;
+            animation-fill-mode: both;
+            animation-timing-function: linear;
+        }
+
+        @keyframes termblock-anim {
+            0% {
+                opacity: 0;
+            }
+
+            50% {
+                opacity: 1;
+            }
+
+            100% {
+                opacity: 0;
+            }
+        }
+
+        .redirect {
+            color: #8d8c8c;
+        }
+    </style>
+</body>
+
+</html>
