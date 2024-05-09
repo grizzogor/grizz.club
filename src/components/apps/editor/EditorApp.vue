@@ -25,7 +25,7 @@ import WindowBase from '@/components/window/WindowBase.vue'
 import AppBase from '@/components/apps/AppBase.vue'
 
 export default {
-    name: 'AboutApp',
+    name: 'EditorApp',
     extends: AppBase,
     components: {
         WindowBase,
@@ -76,7 +76,7 @@ export default {
 }
 
 .editor::selection {
-    background: #a970ce;
+    background: var(--kylo-purple);
     color: #ffffff;
 }
 </style>

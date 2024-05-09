@@ -58,3 +58,5 @@ yarn lint
     -   MIT
 
 Additional attributions for actual content of the website are contained in the website itself. Visit the [page](https://nilllzz.github.io/grizz.club) and view different content to see attributions and artists.
+
+Page design and original implementation by nilllzz (https://nilllzz.dev)

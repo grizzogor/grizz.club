@@ -64,13 +64,13 @@ export default {
 .main:hover {
     background-color: rgba(120, 120, 120, 0.25);
     border-color: rgba(150, 150, 150, 0.25);
-    backdrop-filter: blur(2px);
+    backdrop-filter: blur(4px);
 }
 
 .active {
     background-color: rgba(120, 120, 120, 0.5);
     border-color: rgba(150, 150, 150, 0.5);
-    backdrop-filter: blur(2px);
+    backdrop-filter: blur(4px);
 }
 
 .active:hover {
@@ -84,6 +84,8 @@ export default {
     width: 48px;
     height: 48px;
     margin-bottom: 8px;
+
+    filter: drop-shadow(0 0 2px rgba(0, 0, 0, 0.25));
 }
 
 .text {

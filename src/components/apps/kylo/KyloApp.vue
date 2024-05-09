@@ -24,8 +24,13 @@
 
                 <div :class="$style.well">
                     <p>
-                        My purple/orange wolf protogen hybrid fursona that I use
-                        online.
+                        My
+                        <span :style="{ color: `var(--kylo-purple)` }"
+                            >purple</span
+                        >/<span :style="{ color: `var(--kylo-orange)` }"
+                            >orange</span
+                        >
+                        wolf protogen hybrid fursona that I use online.
                     </p>
                     <p>
                         For more information about the specifications of Kylo,

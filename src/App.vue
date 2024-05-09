@@ -23,6 +23,11 @@ document.addEventListener('dragover', (event) => {
 </script>
 
 <style>
+:root {
+    --kylo-purple: #a970ce;
+    --kylo-orange: #ff7300;
+}
+
 @font-face {
     font-family: 'CantarellFont';
     src: local('Cantarell'), url('assets/font/cantarell.ttf');
@@ -47,11 +52,11 @@ body {
 }
 
 a {
-    color: #ff7300;
+    color: var(--kylo-orange);
 }
 
 a:visited {
-    color: #a970ce;
+    color: var(--kylo-purple);
 }
 
 button {

@@ -70,58 +70,19 @@
                     </p>
                     <p>
                         My character's name is Kylo Byte. He is a
-                        <span :style="{ color: `#a970ce` }">purple</span> and
-                        <span :style="{ color: `#ff7300` }">orange</span> wolf
-                        protogen running on Linux.
+                        <span :style="{ color: `var(--kylo-purple)` }">
+                            purple
+                        </span>
+                        and
+                        <span :style="{ color: `var(--kylo-orange)` }">
+                            orange
+                        </span>
+                        wolf protogen running on Linux.
                     </p>
                     <div>
                         <button @click="handleClickLaunchKylo">
                             Launch kylo_byte.sh
                         </button>
-                    </div>
-                </div>
-
-                <h3 :class="$style.listHeading">Desktop</h3>
-                <div :class="$style.list">
-                    <div :class="$style.listItem">
-                        <span>Processor</span>
-                        <span>AMD Ryzen 7 5800X</span>
-                    </div>
-                    <div :class="$style.listItem">
-                        <span>RAM</span>
-                        <span>32 GB</span>
-                    </div>
-                    <div :class="$style.listItem">
-                        <span>GPU</span>
-                        <span>NVIDIA RTX 3070</span>
-                    </div>
-                    <div :class="$style.listItem">
-                        <span>Operating System</span>
-                        <span>Windows 11 &amp; Pop!_OS (dual boot)</span>
-                    </div>
-                </div>
-
-                <h3 :class="$style.listHeading">Laptop</h3>
-                <div :class="$style.list">
-                    <div :class="$style.listItem">
-                        <span>Model</span>
-                        <span>Lenovo ThinkPad T14 Gen 2</span>
-                    </div>
-                    <div :class="$style.listItem">
-                        <span>CPU</span>
-                        <span>AMD Ryzen 7 5850U</span>
-                    </div>
-                    <div :class="$style.listItem">
-                        <span>RAM</span>
-                        <span>16 GB</span>
-                    </div>
-                    <div :class="$style.listItem">
-                        <span>Storage</span>
-                        <span>512 GB SSD</span>
-                    </div>
-                    <div :class="$style.listItem">
-                        <span>Operating System</span>
-                        <span>Windows 11 &amp; Fedora Linux (dual boot)</span>
                     </div>
                 </div>
 
@@ -197,6 +158,110 @@
                     <div :class="$style.listItem">
                         <span><i class="bi bi-discord" /> Discord</span>
                         <span>@grizzogor</span>
+                    </div>
+                </div>
+
+                <h3 :class="$style.listHeading">Interests</h3>
+                <div :class="$style.well">
+                    <ul>
+                        <li>
+                            Computer Hardware
+                            <ul>
+                                <li>New Hardware</li>
+                                <li>2000's era Hardware</li>
+                            </ul>
+                        </li>
+                        <li>
+                            Computer Software
+                            <ul>
+                                <li>Windows XP through 11</li>
+                                <li>Linux</li>
+                                <li>
+                                    Fediverse applications (Mastodon and Lemmy)
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            Networking
+                            <ul>
+                                <li>Ubiquiti networking gear</li>
+                            </ul>
+                        </li>
+                        <li>
+                            Gaming
+                            <ul>
+                                <li>Steam Deck</li>
+                                <li>Linux Gaming</li>
+                                <li>PlayStation 3, 4, 5, and Vita</li>
+                            </ul>
+                        </li>
+                        <li>
+                            Anime
+                            <ul>
+                                <li>RWBY</li>
+                                <li>Fullmetal Alchemist: Brotherhood</li>
+                            </ul>
+                        </li>
+                        <li>
+                            Furry Fandom
+                            <ul>
+                                <li>Protogens</li>
+                                <li>
+                                    Designing my own fursona:
+                                    <a
+                                        @click="handleClickLaunchKylo"
+                                        :style="{ cursor: `pointer` }"
+                                        title="Launch kylo_byte.sh"
+                                    >
+                                        Kylo Byte
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+                <h3 :class="$style.listHeading">Desktop</h3>
+                <div :class="$style.list">
+                    <div :class="$style.listItem">
+                        <span>Processor</span>
+                        <span>AMD Ryzen 7 5800X</span>
+                    </div>
+                    <div :class="$style.listItem">
+                        <span>RAM</span>
+                        <span>32 GB</span>
+                    </div>
+                    <div :class="$style.listItem">
+                        <span>GPU</span>
+                        <span>NVIDIA RTX 3070</span>
+                    </div>
+                    <div :class="$style.listItem">
+                        <span>Operating System</span>
+                        <span>Windows 11 &amp; Pop!_OS (dual boot)</span>
+                    </div>
+                </div>
+
+                <h3 :class="$style.listHeading">Laptop</h3>
+                <div :class="$style.list">
+                    <div :class="$style.listItem">
+                        <span>Model</span>
+                        <span>Lenovo ThinkPad T14 Gen 2</span>
+                    </div>
+                    <div :class="$style.listItem">
+                        <span>CPU</span>
+                        <span>AMD Ryzen 7 5850U</span>
+                    </div>
+                    <div :class="$style.listItem">
+                        <span>RAM</span>
+                        <span>16 GB</span>
+                    </div>
+                    <div :class="$style.listItem">
+                        <span>Storage</span>
+                        <span>512 GB SSD</span>
+                    </div>
+                    <div :class="$style.listItem">
+                        <span>Operating System</span>
+                        <span>Windows 11 &amp; Fedora Linux (dual boot)</span>
                     </div>
                 </div>
             </div>
