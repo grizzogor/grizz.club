@@ -1,53 +1,64 @@
 <template>
     <div :class="$style.main">
         <DesktopMenuBar></DesktopMenuBar>
-        <div :class="$style.desktop" @click="onClickDesktop" ref="desktop">
+        <div :class="$style.desktop" ref="desktop" @click="onClickDesktop">
             <div :class="$style.desktopIcons" id="desktop-icons">
-                <DesktopIcon
-                    :isActive="activeIconId === 'About Me'"
-                    icon="help"
-                    text="About Me"
-                    @activate="onIconActivate"
-                    @launch="onAppStartApp('about', {})"
-                />
-                <DesktopIcon
-                    :isActive="activeIconId === 'Files'"
-                    icon="files"
-                    text="Files"
-                    @activate="onIconActivate"
-                    @launch="handleOpenFiles"
-                />
-                <DesktopIcon
-                    :isActive="activeIconId === 'Blog'"
-                    icon="blog"
-                    text="Blog"
-                    @activate="onIconActivate"
-                    @launch="handleOpenBlog"
-                />
-                <DesktopIcon
-                    :isActive="activeIconId === 'kylo_byte.sh'"
-                    icon="kylo"
-                    text="kylo_byte.sh"
-                    @activate="onIconActivate"
-                    @launch="onAppStartApp('kylo', {})"
-                />
-                <DesktopIcon
-                    :isActive="activeIconId === 'attributions.txt'"
-                    icon="txt"
-                    text="attributions.txt"
-                    @activate="onIconActivate"
-                    @launch="
-                        onAppStartApp('editor', { file: 'attributions.txt' })
-                    "
-                />
-                <DesktopIcon
-                    v-if="showBerry"
-                    :isActive="activeIconId === 'Berry Blueflame'"
-                    icon="berry"
-                    text="Berry Blueflame"
-                    @activate="onIconActivate"
-                    @launch="onAppStartApp('berry', {})"
-                />
+                <div :class="$style.desktopIconsInner">
+                    <DesktopIcon
+                        :isActive="activeIconId === 'About Me'"
+                        icon="help"
+                        text="About Me"
+                        @activate="onIconActivate"
+                        @launch="onAppStartApp('about', {})"
+                    />
+                    <DesktopIcon
+                        :isActive="activeIconId === 'Files'"
+                        icon="files"
+                        text="Files"
+                        @activate="onIconActivate"
+                        @launch="handleOpenFiles"
+                    />
+                    <DesktopIcon
+                        :isActive="activeIconId === 'Blog'"
+                        icon="blog"
+                        text="Blog"
+                        @activate="onIconActivate"
+                        @launch="handleOpenBlog"
+                    />
+                    <DesktopIcon
+                        :isActive="activeIconId === 'Favorites & Downloads'"
+                        icon="external"
+                        text="Favorites &amp; Downloads"
+                        @activate="onIconActivate"
+                        @launch="onAppStartApp('external', {})"
+                    />
+                    <DesktopIcon
+                        :isActive="activeIconId === 'kylo_byte.sh'"
+                        icon="kylo"
+                        text="kylo_byte.sh"
+                        @activate="onIconActivate"
+                        @launch="onAppStartApp('kylo', {})"
+                    />
+                    <DesktopIcon
+                        :isActive="activeIconId === 'attributions.txt'"
+                        icon="txt"
+                        text="attributions.txt"
+                        @activate="onIconActivate"
+                        @launch="
+                            onAppStartApp('editor', {
+                                file: 'attributions.txt',
+                            })
+                        "
+                    />
+                    <DesktopIcon
+                        v-if="showBerry"
+                        :isActive="activeIconId === 'Berry Blueflame'"
+                        icon="berry"
+                        text="Berry Blueflame"
+                        @activate="onIconActivate"
+                        @launch="onAppStartApp('berry', {})"
+                    />
+                </div>
             </div>
             <component
                 v-for="app in apps"
@@ -92,11 +103,15 @@ export default {
     },
     methods: {
         onIconActivate(iconId) {
+            this.activeAppId = -1
             this.activeIconId = iconId
         },
 
         onClickDesktop(e) {
-            if (e.target.id !== 'desktop-icons') {
+            if (
+                e.target.id !== 'desktop-icons' &&
+                e.target.parentElement?.id !== 'desktop-icons'
+            ) {
                 return
             }
             this.activeAppId = -1
@@ -234,6 +249,11 @@ export default {
                 this.onAppStartApp('berry', {})
                 localStorage.setItem('show-berry', JSON.stringify(true))
                 break
+            case 'external':
+            case 'downloads':
+            case 'favorites':
+                this.onAppStartApp('external', {})
+                break
         }
 
         this.showBerry = JSON.parse(
@@ -297,11 +317,18 @@ export default {
     right: 0;
     bottom: 0;
     z-index: 0;
+}
 
+.desktopIconsInner {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     gap: 8px;
     padding: 8px;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
 }
 </style>

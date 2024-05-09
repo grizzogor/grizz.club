@@ -1,0 +1,76 @@
+{
+    "favorites": {
+        "description": "These are my favorite sites that I'd like to feature.",
+        "sections": [
+            {
+                "title": "Friend's Websites",
+                "items": [
+                    {
+                        "title": "Overseer Cave",
+                        "url": "https://overseercave.com/",
+                        "description": "Made in FrontPage 2003!",
+                        "imgUrl": "./overseer_cave.jpg"
+                    },
+                    {
+                        "title": "DXD Tech",
+                        "url": "https://teko.win/",
+                        "description": "A very well made site, even if it's not oozing with early 2000s aesthetics.",
+                        "imgUrl": "./dxd_tech.jpg"
+                    }
+                ]
+            },
+            {
+                "title": "Achievement / Trophy Hunting",
+                "items": [
+                    {
+                        "title": "PSNProfiles",
+                        "url": "https://psnprofiles.com/grizzogor",
+                        "description": "Excellent crowd-sourced trophy guides for many games, helps me with actually completing games.",
+                        "imgUrl": "./psnprofiles.jpg"
+                    },
+                    {
+                        "title": "Completionist.me",
+                        "url": "https://completionist.me/steam/profile/76561198138723749",
+                        "description": "Similar to PSNProfiles, but for Steam and RetroAchievements. Has a Kanban board for each game. Links to Steam Community Guides.",
+                        "imgUrl": "./completionist_me.jpg"
+                    }
+                ]
+            },
+            {
+                "title": "Deal Finding",
+                "items": [
+                    {
+                        "title": "PCPartPicker",
+                        "url": "https://pcpartpicker.com/",
+                        "description": "Excellent resource for finding the best price on PC hardware.",
+                        "imgUrl": "./pcpartpicker.jpg"
+                    },
+                    {
+                        "title": "IsThereAnyDeal",
+                        "url": "https://isthereanydeal.com/",
+                        "description": "Finds deals on PC games on authorized key merchants. Set up your wishlist to receive e-mail notifications when a game you want is on sale.",
+                        "imgUrl": "./isthereanydeal.jpg"
+                    },
+                    {
+                        "title": "DekuDeals",
+                        "url": "https://dekudeals.com/",
+                        "description": "Similar to IsThereAnyDeal, but for PlayStation 4 and 5 games in various retailers (Amazon, Target, etc).",
+                        "imgUrl": "./deku_deals.jpg"
+                    },
+                    {
+                        "title": "PSDeals",
+                        "url": "https://psdeals.net/",
+                        "description": "PSDeals is a similar site that allows for browsing PS3 and PS Vita stores, as well as the modern consoles.",
+                        "imgUrl": "./psdeals.jpg"
+                    },
+                    {
+                        "title": "PSPrices",
+                        "url": "https://psprices.com/",
+                        "description": "PSPrices is another similar site for all console and mobile platforms, but with a pricier premium subscription and a slightly worse UI.",
+                        "imgUrl": "./psprices.jpg"
+                    }
+                ]
+            }
+        ]
+    }
+}

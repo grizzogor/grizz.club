@@ -91,5 +91,6 @@ export default {
 .text {
     user-select: none;
     text-shadow: 0 0 2px black;
+    text-align: center;
 }
 </style>
