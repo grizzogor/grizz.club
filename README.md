@@ -57,6 +57,11 @@ yarn lint
     -   https://icons.getbootstrap.com/
     -   MIT
 
+-   "Berry Blueflame"
+
+    -   Work adapted from "[Blobbiis](https://www.extremelyfungible.com/blobbiis)" by [Ama](https://amatheartist.carrd.co/). Edited to create multiple expressions and to remove background.
+    -   CC-BY-SA-4.0
+
 Additional attributions for actual content of the website are contained in the website itself. Visit the [page](https://nilllzz.github.io/grizz.club) and view different content to see attributions and artists.
 
 Page design and original implementation by nilllzz (https://nilllzz.dev)
