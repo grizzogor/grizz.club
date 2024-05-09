@@ -34,36 +34,23 @@
             </div>
         </div>
 
-        <div :class="$style.section">
-            <h3>Stickers</h3>
-            <div :class="$style.imageCardList">
-                <ImageCard
-                    v-for="stickerData of getStickers()"
-                    :key="stickerData.name"
-                    :imgUrl="stickerData.imgUrl"
-                    :name="stickerData.name"
-                    :artist="stickerData.artist"
-                    :artistUrl="stickerData.artistUrl"
-                    :width="150"
-                    :height="150"
-                    type="sticker"
-                />
-            </div>
-        </div>
+        <div
+            v-for="section of sections"
+            :key="section.title"
+            :class="$style.section"
+        >
+            <h3>{{ section.title }}</h3>
 
-        <div :class="$style.section">
-            <h3>GIFs</h3>
             <div :class="$style.imageCardList">
                 <ImageCard
-                    v-for="gifData of getGIFs()"
-                    :key="gifData.name"
-                    :imgUrl="gifData.imgUrl"
-                    :name="gifData.name"
-                    :artist="gifData.artist"
-                    :artistUrl="gifData.artistUrl"
-                    :width="gifData.width || 220"
-                    :height="gifData.height || 150"
-                    type="gif"
+                    v-for="item of section.items"
+                    :key="item.name"
+                    :imgUrl="item.imgUrl"
+                    :name="item.name"
+                    :artist="item.artist"
+                    :artistUrl="item.artistUrl"
+                    :width="item.width || 150"
+                    :height="item.height || 150"
                 />
             </div>
         </div>
@@ -75,123 +62,10 @@ import WindowBase from '@/components/window/WindowBase.vue'
 import AppBase from '@/components/apps/AppBase.vue'
 import ImageCard from '@/components/apps/kylo/ImageCard.vue'
 
-const stickers = [
-    {
-        imgUrl: 'im/KyloAngry.png',
-        name: 'Kylo Angry',
-        artist: 'chequerootlurks',
-        artistUrl: 'https://chequerootlurks.tumblr.com/',
-    },
-    {
-        imgUrl: 'im/KyloEvil.png',
-        name: 'Kylo Evil',
-        artist: 'chequerootlurks',
-        artistUrl: 'https://chequerootlurks.tumblr.com/',
-    },
-    {
-        imgUrl: 'im/KyloEyeroll.png',
-        name: 'Kylo Eyeroll',
-        artist: 'chequerootlurks',
-        artistUrl: 'https://chequerootlurks.tumblr.com/',
-    },
-    {
-        imgUrl: 'im/KyloHappy.png',
-        name: 'Kylo Happy',
-        artist: 'chequerootlurks',
-        artistUrl: 'https://chequerootlurks.tumblr.com/',
-    },
-    {
-        imgUrl: 'im/KyloHeart.png',
-        name: 'Kylo Heart',
-        artist: 'chequerootlurks',
-        artistUrl: 'https://chequerootlurks.tumblr.com/',
-    },
-    {
-        imgUrl: 'im/KyloKisser.png',
-        name: 'Kylo Kisser',
-        artist: 'chequerootlurks',
-        artistUrl: 'https://chequerootlurks.tumblr.com/',
-    },
-    {
-        imgUrl: 'im/KyloOwO.png',
-        name: 'Kylo OwO',
-        artist: 'chequerootlurks',
-        artistUrl: 'https://chequerootlurks.tumblr.com/',
-    },
-    {
-        imgUrl: 'im/KyloPanic.png',
-        name: 'Kylo Panic',
-        artist: 'chequerootlurks',
-        artistUrl: 'https://chequerootlurks.tumblr.com/',
-    },
-    {
-        imgUrl: 'im/KyloPog.png',
-        name: 'Kylo Pog',
-        artist: 'chequerootlurks',
-        artistUrl: 'https://chequerootlurks.tumblr.com/',
-    },
-    {
-        imgUrl: 'im/KyloPuppyEyes.png',
-        name: 'Kylo Puppy Eyes',
-        artist: 'chequerootlurks',
-        artistUrl: 'https://chequerootlurks.tumblr.com/',
-    },
-    {
-        imgUrl: 'im/KyloSad.png',
-        name: 'Kylo Sad',
-        artist: 'chequerootlurks',
-        artistUrl: 'https://chequerootlurks.tumblr.com/',
-    },
-    {
-        imgUrl: 'im/KyloScared.png',
-        name: 'Kylo Scared',
-        artist: 'chequerootlurks',
-        artistUrl: 'https://chequerootlurks.tumblr.com/',
-    },
-    {
-        imgUrl: 'im/KyloTearsOfJoy.png',
-        name: 'Kylo Tears of Joy',
-        artist: 'chequerootlurks',
-        artistUrl: 'https://chequerootlurks.tumblr.com/',
-    },
-    {
-        imgUrl: 'im/KyloThinking.png',
-        name: 'Kylo Thinking',
-        artist: 'chequerootlurks',
-        artistUrl: 'https://chequerootlurks.tumblr.com/',
-    },
-    {
-        imgUrl: 'im/KyloWink.png',
-        name: 'Kylo Wink',
-        artist: 'chequerootlurks',
-        artistUrl: 'https://chequerootlurks.tumblr.com/',
-    },
-]
-
-const gifs = [
-    {
-        imgUrl: 'im/KyloHi.gif',
-        name: 'Kylo Hi',
-        artist: 'nnathan (Discord)',
-    },
-    {
-        imgUrl: 'im/KyloBye.gif',
-        name: 'Kylo Bye',
-        artist: 'nnathan (Discord)',
-    },
-    {
-        imgUrl: 'im/KyloPet.gif',
-        name: 'Kylo Pet',
-        artist: 'otter-boo',
-        artistUrl: 'https://www.deviantart.com/otter-boo',
-        width: 150,
-    },
-]
-
 const fileContext = require.context(
     '@/assets/apps/kylo',
     true, // Subdirectories
-    /\.png$/
+    /\.(?:png|json)$/
 )
 
 export default {
@@ -201,15 +75,15 @@ export default {
         WindowBase,
         ImageCard,
     },
+    data() {
+        return {
+            /**
+             * @type {{title:String,items:{imgUrl:String,name:String,artist:String,artistUrl:String|undefined,width:Number|undefined,height:Number|undefined}[]}}
+             */
+            sections: [],
+        }
+    },
     methods: {
-        getStickers() {
-            return stickers
-        },
-
-        getGIFs() {
-            return gifs
-        },
-
         handleMouseEnterHeadingImg(e) {
             const imgEl = e.target
             imgEl.src = fileContext('./KyloPog.png')
@@ -229,6 +103,9 @@ export default {
     mounted() {
         this.updateTitle('Kylo Byte')
         this.onResize({ width: 1050, height: 700 })
+
+        const data = fileContext('./data.json')
+        this.sections = data.sections
     },
 }
 </script>
