@@ -90,6 +90,11 @@ button:active {
 pre {
     font-family: MonospaceFont;
 }
+
+*::selection {
+    background: var(--kylo-purple);
+    color: #ffffff;
+}
 </style>
 
 <style module>

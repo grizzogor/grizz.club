@@ -111,7 +111,7 @@ export default {
         },
     },
     mounted() {
-        this.updateTitle('Favorites & Downloads')
+        this.updateTitle('Favorites')
         this.onResize({ width: 1050, height: 700 })
 
         const data = fileContext('./data.json')

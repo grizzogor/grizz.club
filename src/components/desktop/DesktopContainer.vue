@@ -15,6 +15,7 @@
                         :isActive="activeIconId === 'Files'"
                         icon="files"
                         text="Files"
+                        is-link
                         @activate="onIconActivate"
                         @launch="handleOpenFiles"
                     />
@@ -22,13 +23,14 @@
                         :isActive="activeIconId === 'Blog'"
                         icon="blog"
                         text="Blog"
+                        is-link
                         @activate="onIconActivate"
                         @launch="handleOpenBlog"
                     />
                     <DesktopIcon
-                        :isActive="activeIconId === 'Favorites & Downloads'"
+                        :isActive="activeIconId === 'Favorites'"
                         icon="external"
-                        text="Favorites &amp; Downloads"
+                        text="Favorites"
                         @activate="onIconActivate"
                         @launch="onAppStartApp('external', {})"
                     />

@@ -76,7 +76,7 @@ export default {
 }
 
 .editor::selection {
-    background: var(--kylo-purple);
-    color: #ffffff;
+    background: var(--kylo-orange);
+    color: #141414;
 }
 </style>

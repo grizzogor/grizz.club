@@ -7,7 +7,14 @@
         @pointerdown="handleClick"
         @dblclick="handleDoubleClick"
     >
-        <img :src="getIconUrl()" :class="$style.icon" alt="Desktop icon" />
+        <div :class="$style.iconContainer">
+            <img :src="getIconUrl()" :class="$style.icon" alt="Desktop icon" />
+            <i
+                v-if="isLink"
+                class="bi bi-box-arrow-up-right"
+                :class="$style.linkIcon"
+            />
+        </div>
         <span :class="$style.text">{{ text }}</span>
     </div>
 </template>
@@ -20,6 +27,7 @@ export default {
         icon: String,
         text: String,
         isActive: Boolean,
+        isLink: Boolean,
     },
     methods: {
         getIconUrl() {
@@ -78,6 +86,10 @@ export default {
     border-color: rgba(150, 150, 150, 0.65);
 }
 
+.iconContainer {
+    position: relative;
+}
+
 .icon {
     user-select: none;
     display: block;
@@ -86,6 +98,17 @@ export default {
     margin-bottom: 8px;
 
     filter: drop-shadow(0 0 2px rgba(0, 0, 0, 0.25));
+}
+
+.linkIcon {
+    position: absolute;
+    bottom: 4px;
+    right: -4px;
+    background-color: var(--kylo-purple);
+    color: #eeeeee;
+    padding-left: 2px;
+    padding-right: 2px;
+    border-radius: 4px;
 }
 
 .text {
