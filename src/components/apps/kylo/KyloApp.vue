@@ -17,6 +17,7 @@
                 <img
                     :class="$style.headingImg"
                     src="@/assets/apps/kylo/KyloHappy.png"
+                    alt="Kylo Happy"
                     @mouseenter="handleMouseEnterHeadingImg"
                     @mouseleave="handleMouseLeaveHeadingImg"
                 />

@@ -13,17 +13,49 @@
         @close="onClose"
     >
         <div :class="$style.heading">
-            <img src="@/assets/apps/about/KyloHappy.png" />
+            <img src="@/assets/apps/about/KyloHappy.png" alt="Kylo Happy" />
             <h2>Welcome to grizz.club</h2>
             <div :class="$style.tags">
-                <img src="@/assets/img/tags/american.gif" />
-                <img src="@/assets/img/tags/hoosierbutton.png" />
-                <img src="@/assets/img/tags/hehim.png" />
-                <img src="@/assets/img/tags/cli.gif" />
-                <img src="@/assets/img/tags/vim_the_editor.png" />
-                <img src="@/assets/img/tags/pride.gif" />
-                <img src="@/assets/img/tags/fedora_powered.png" />
-                <img src="@/assets/img/tags/nginx-powered.png" />
+                <img
+                    src="@/assets/img/tags/american.gif"
+                    alt="American tag"
+                    title="American"
+                />
+                <img
+                    src="@/assets/img/tags/hoosierbutton.png"
+                    alt="Hoosierbutton tag"
+                    title="Hoosier"
+                />
+                <img
+                    src="@/assets/img/tags/hehim.png"
+                    alt="He/Him tag"
+                    title="He / Him"
+                />
+                <img
+                    src="@/assets/img/tags/cli.gif"
+                    alt="CLI tag"
+                    title="CLI"
+                />
+                <img
+                    src="@/assets/img/tags/vim_the_editor.png"
+                    alt="VIM tag"
+                    title="vim the editor"
+                />
+                <img
+                    src="@/assets/img/tags/pride.gif"
+                    alt="Pride tag"
+                    title="Pride"
+                />
+                <img
+                    src="@/assets/img/tags/fedora_powered.png"
+                    alt="Fedora tag"
+                    title="Fedora powered"
+                />
+                <img
+                    src="@/assets/img/tags/nginx-powered.png"
+                    alt="NGINX tag"
+                    title="NGINX powered"
+                />
             </div>
         </div>
 

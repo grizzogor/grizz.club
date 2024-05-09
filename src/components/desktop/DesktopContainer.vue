@@ -191,8 +191,26 @@ export default {
         },
     },
     mounted() {
-        // Launch the about me app by default.
-        this.onAppStartApp('about', {})
+        // Launch requested app by default based on query params:
+        const search = new URLSearchParams(window.location.search)
+        const launchAppArg = (search.get('app') || 'about').toLowerCase()
+        switch (launchAppArg) {
+            case 'about':
+                this.onAppStartApp('about', {})
+                break
+            case 'kylo':
+            case 'kylo_byte':
+                this.onAppStartApp('kylo', {})
+                break
+            case 'editor':
+                {
+                    const file = search.get('file')
+                    if (file) {
+                        this.onAppStartApp('editor', { file })
+                    }
+                }
+                break
+        }
 
         // Store the desktop's current size so the Window can access it for resize/reposition actions.
         const handleResize = () => {

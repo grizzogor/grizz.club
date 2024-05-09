@@ -7,7 +7,7 @@
         @pointerdown="handleClick"
         @dblclick="handleDoubleClick"
     >
-        <img :src="getIconUrl()" :class="$style.icon" />
+        <img :src="getIconUrl()" :class="$style.icon" alt="Desktop icon" />
         <span :class="$style.text">{{ text }}</span>
     </div>
 </template>

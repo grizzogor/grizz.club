@@ -1,6 +1,10 @@
 <template>
     <div :class="$style.background">
-        <img :class="$style.backgroundImg" src="@/assets/img/background.jpg" />
+        <img
+            :class="$style.backgroundImg"
+            src="@/assets/img/background.jpg"
+            alt="Desktop Background"
+        />
     </div>
 </template>
 

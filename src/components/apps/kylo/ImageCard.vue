@@ -18,6 +18,7 @@
                     }deg)`,
                     filter: `brightness(${imgBrightness * 100}%)`,
                 }"
+                :alt="`${name} image`"
             />
         </div>
 
