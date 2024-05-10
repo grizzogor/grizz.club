@@ -167,8 +167,6 @@ export default {
 
 .favoriteImgContainer {
     position: relative;
-    width: 180px;
-    height: 100px;
     border-radius: 8px;
     border-width: 1px;
     border-style: solid;
