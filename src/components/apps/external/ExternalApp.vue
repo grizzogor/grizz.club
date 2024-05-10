@@ -34,7 +34,13 @@
                         :key="item.title"
                         :class="$style.favorite"
                     >
-                        <div :class="$style.favoriteImgContainer">
+                        <div
+                            :class="$style.favoriteImgContainer"
+                            :style="{
+                                width: `${item.width || 180}px`,
+                                height: `${item.height || 100}px`,
+                            }"
+                        >
                             <img
                                 v-if="item.imgUrl"
                                 :src="getImgUrl(item.imgUrl)"
