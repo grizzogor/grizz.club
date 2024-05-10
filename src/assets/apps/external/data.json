@@ -20,6 +20,23 @@
                 ]
             },
             {
+                "title": "Content Creators",
+                "items": [
+                    {
+                        "title": "Cathode Ray Dude",
+                        "url": "https://youtube.com/@CathodeRayDude",
+                        "description": "An amazing technology channel featuring interesting PCs, old A/V equipment, and weird software.",
+                        "imgUrl": "./cathode_ray_dude.png"
+                    },
+                    {
+                        "title": "Rerez",
+                        "url": "https://youtube.com/@rerez",
+                        "description": "Covering video games that are \"Just Bad\" to gaming hardware that's the \"Worst Ever\".",
+                        "imgUrl": "./rerez.png"
+                    }
+                ]
+            },
+            {
                 "title": "Achievement / Trophy Hunting",
                 "items": [
                     {
