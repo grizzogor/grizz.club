@@ -61,10 +61,10 @@
                         <span>
                             <a
                                 href="https://mstdn.social/@grizz"
-                                rel="noopener noreferrer"
+                                rel="noopener noreferrer me"
                                 target="_blank"
                             >
-                                grizz@mstdn.social
+                                @grizz@mstdn.social
                             </a>
                         </span>
                     </div>
