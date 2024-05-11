@@ -1,6 +1,6 @@
 {
     "favorites": {
-        "description": "These are my favorite sites that I'd like to feature.",
+        "description": "These are my favorite sites and content creators to feature in no particular order.",
         "sections": [
             {
                 "title": "Friend's Websites",
@@ -16,23 +16,6 @@
                         "url": "https://teko.win/",
                         "description": "A very well made site, even if it's not oozing with early 2000s aesthetics.",
                         "imgUrl": "./dxd_tech.jpg"
-                    }
-                ]
-            },
-            {
-                "title": "Content Creators",
-                "items": [
-                    {
-                        "title": "Cathode Ray Dude",
-                        "url": "https://youtube.com/@CathodeRayDude",
-                        "description": "An amazing technology channel featuring interesting PCs, old A/V equipment, and weird software.",
-                        "imgUrl": "./cathode_ray_dude.png"
-                    },
-                    {
-                        "title": "Rerez",
-                        "url": "https://youtube.com/@rerez",
-                        "description": "Covering video games that are \"Just Bad\" to gaming hardware that's the \"Worst Ever\".",
-                        "imgUrl": "./rerez.png"
                     }
                 ]
             },
@@ -85,6 +68,280 @@
                         "url": "https://psprices.com/",
                         "description": "PSPrices is another similar site for all console and mobile platforms, but with a pricier premium subscription and a slightly worse UI.",
                         "imgUrl": "./psprices.jpg"
+                    }
+                ]
+            },
+            {
+                "title": "Content Creators - Technology",
+                "items": [
+                    {
+                        "title": "Cathode Ray Dude",
+                        "url": "https://youtube.com/@CathodeRayDude",
+                        "description": "An amazing technology channel featuring interesting PCs, old A/V equipment, and weird software.",
+                        "imgUrl": "./crd.jpg",
+                        "width": 125,
+                        "height": 125
+                    },
+                    {
+                        "title": "Linus Tech Tips",
+                        "url": "https://youtube.com/@LinusTechTips",
+                        "description": "One of the largest tech channels, covering new products and all things tech.",
+                        "imgUrl": "./ltt.png",
+                        "width": 125,
+                        "height": 125
+                    },
+                    {
+                        "title": "Hardware Haven",
+                        "url": "https://youtube.com/@HardwareHaven",
+                        "description": "Covering DIY homelab hardware and software on a budget.",
+                        "imgUrl": "./hh.jpg",
+                        "width": 125,
+                        "height": 125
+                    },
+                    {
+                        "title": "Craft Computing",
+                        "url": "https://youtube.com/@CraftComputing",
+                        "description": "Covers DIY homelab hardware and software, as well as tutorials and product reviews.",
+                        "imgUrl": "./craftcomputing.jpg",
+                        "width": 125,
+                        "height": 125
+                    },
+                    {
+                        "title": "Dawid Does Tech Stuff",
+                        "url": "https://youtube.com/@DawidDoesTechStuff",
+                        "description": "Covers technology bought from weird marketplaces, as well as testing crazy ideas.",
+                        "imgUrl": "./dawiddoestechstuff.jpg",
+                        "width": 125,
+                        "height": 125
+                    },
+                    {
+                        "title": "DankPods",
+                        "url": "https://youtube.com/@DankPods",
+                        "description": "Originally covering iPod modding, he's expanded into other topics, such as audio equipment and old technology.",
+                        "imgUrl": "./dankpods.jpg",
+                        "width": 125,
+                        "height": 125
+                    },
+                    {
+                        "title": "Gamers Nexus",
+                        "url": "https://youtube.com/@GamersNexus",
+                        "description": "Covering computer hardware news weekly, as well as honest reviews about PC components.",
+                        "imgUrl": "./gamersnexus.jpg",
+                        "width": 125,
+                        "height": 125
+                    },
+                    {
+                        "title": "Action Retro",
+                        "url": "https://youtube.com/@ActionRetro",
+                        "description": "Covering old computers and Macintoshes in the style of Druaga1.",
+                        "imgUrl": "./actionretro.jpg",
+                        "width": 125,
+                        "height": 125
+                    },
+                    {
+                        "title": "Jeff Geerling",
+                        "url": "https://youtube.com/@JeffGeerling",
+                        "description": "Covering Raspberry Pis and other Single-Board Computers, as well as DIY homelab hardware and software.",
+                        "imgUrl": "./jeffgeerling.jpg",
+                        "width": 125,
+                        "height": 125
+                    },
+                    {
+                        "title": "Snazzy Labs",
+                        "url": "https://youtube.com/@snazzy",
+                        "description": "Covering Apple products and honestly reviews technology.",
+                        "imgUrl": "./snazzy.jpg",
+                        "width": 125,
+                        "height": 125
+                    },
+                    {
+                        "title": "Technology Connections",
+                        "url": "https://youtube.com/@TechnologyConnections",
+                        "description": "Covering technology in various products and tells how the technology works.",
+                        "imgUrl": "./technologyconnections.jpg",
+                        "width": 125,
+                        "height": 125
+                    },
+                    {
+                        "title": "Techmoan",
+                        "url": "https://youtube.com/@Techmoan",
+                        "description": "Covering old audio and video equipment, including rare and long-forgotten A/V formats.",
+                        "imgUrl": "./techmoan.jpg",
+                        "width": 125,
+                        "height": 125
+                    },
+                    {
+                        "title": "Tech Tangents",
+                        "url": "https://youtube.com/@TechTangents",
+                        "description": "Covering old computers and technology, as well as programming and preservation efforts.",
+                        "imgUrl": "./techtangents.jpg",
+                        "width": 125,
+                        "height": 125
+                    }
+                ]
+            },
+            {
+                "title": "Content Creators - Video Gaming",
+                "items": [
+                    {
+                        "title": "vinesauce",
+                        "url": "https://youtube.com/vinesauce",
+                        "description": "Not your typical variety game streamer. Vinny has several unique stream series, such as video game corruptions, awful plug & plays, and showcasing old commercials.",
+                        "imgUrl": "./vinesauce.png",
+                        "width": 125,
+                        "height": 125
+                    },
+                    {
+                        "title": "Rerez",
+                        "url": "https://youtube.com/@rerez",
+                        "description": "Covering video games that are \"Just Bad\" to gaming hardware that's the \"Worst Ever\".",
+                        "imgUrl": "./rerez.jpg",
+                        "width": 125,
+                        "height": 125
+                    },
+                    {
+                        "title": "Auspicious Frog",
+                        "url": "https://youtube.com/@AuspiciousFrog",
+                        "description": "Up and coming gaming YouTuber who covers niche subjects, like Plok, Rayman Legends' artstyle and Forgotten SNES Games.",
+                        "imgUrl": "./auspiciousfrog.jpg",
+                        "width": 125,
+                        "height": 125
+                    },
+                    {
+                        "title": "DougDoug",
+                        "url": "https://youtube.com/@DougDoug",
+                        "description": "Combines crazy stream ideas with the power of programming to create engaging, entertaining videos.",
+                        "imgUrl": "./dougdoug.jpg",
+                        "width": 125,
+                        "height": 125
+                    },
+                    {
+                        "title": "planet clue",
+                        "url": "https://youtube.com/@planetclue",
+                        "description": "Covers video games and electronics from the late 90s to early 2000s.",
+                        "imgUrl": "./planetclue.jpg",
+                        "width": 125,
+                        "height": 125
+                    },
+                    {
+                        "title": "SimpleFlips",
+                        "url": "https://youtube.com/@SimpleFlips",
+                        "description": "Combines Mario gameplay with romhacking and an excellent community.",
+                        "imgUrl": "./simpleflips.jpg",
+                        "width": 125,
+                        "height": 125
+                    },
+                    {
+                        "title": "Stop Skeletons From Fighting",
+                        "url": "https://youtube.com/@StopSkeletonsFromFighting",
+                        "description": "Covers ambitious video game hardware to delisted digital-only games, each video deserves a popcorn bucket.",
+                        "imgUrl": "./ssff.jpg",
+                        "width": 125,
+                        "height": 125
+                    }
+
+                ]
+            },
+            {
+                "title": "Content Creators - Video Essays",
+                "items": [
+                    {
+                        "title": "f4mi",
+                        "url": "https://youtube.com/@f4micom",
+                        "description": "Covers interesting technology and video game topics in a unique and engaging format.",
+                        "imgUrl": "./f4mi.jpg",
+                        "width": 125,
+                        "height": 125
+                    },
+                    {
+                        "title": "Nick Robinson",
+                        "url": "https://youtube.com/@babylonian",
+                        "description": "Goes to extreme lengths to solve video game, anime, and pop culture mysteries.",
+                        "imgUrl": "./babylonian.jpg",
+                        "width": 125,
+                        "height": 125
+                    },
+                    {
+                        "title": "gabi belle",
+                        "url": "https://youtube.com/@itsgabibelle",
+                        "description": "Covering and analyzing modern social media trends.",
+                        "imgUrl": "./gabibelle.jpg",
+                        "width": 125,
+                        "height": 125
+                    }
+                ]
+            },
+            {
+                "title": "Content Creators - News",
+                "items": [
+                    {
+                        "title": "YongYea",
+                        "url": "https://youtube.com/@YongYea",
+                        "description": "Covers video game industry news.",
+                        "imgUrl": "./yongyea.jpg",
+                        "width": 125,
+                        "height": 125
+                    },
+                    {
+                        "title": "GameLinked",
+                        "url": "https://youtube.com/@GameLinked",
+                        "description": "Covering video game news twice a week.",
+                        "imgUrl": "./gamelinked.jpg",
+                        "width": 125,
+                        "height": 125
+                    },
+                    {
+                        "title": "TechLinked",
+                        "url": "https://youtube.com/@techlinked",
+                        "description": "Covering technology news and gaming culture three times per week.",
+                        "imgUrl": "./techlinked.jpg",
+                        "width": 125,
+                        "height": 125
+                    },
+                    {
+                        "title": "Gamers Nexus",
+                        "url": "https://youtube.com/@GamersNexus",
+                        "description": "Covering computer hardware news weekly.",
+                        "imgUrl": "./gamersnexus.jpg",
+                        "width": 125,
+                        "height": 125
+                    },
+                    {
+                        "title": "Mystic",
+                        "url": "https://youtube.com/@MysticRyan",
+                        "description": "Covering PlayStation and games industry news weekly, as well as other PlayStation content.",
+                        "imgUrl": "./mystic.jpg",
+                        "width": 125,
+                        "height": 125
+                    }
+                ]
+            },
+            {
+                "title": "Content Creators - Other",
+                "items": [
+                    {
+                        "title": "brutalmoose",
+                        "url": "https://youtube.com/@brutalmoose",
+                        "description": "Used to cover video games, but has expanded into a variety of topics, such as food and movie reviews.",
+                        "imgUrl": "./brutalmoose.jpg",
+                        "width": 125,
+                        "height": 125
+                    },
+                    {
+                        "title": "GLITCH",
+                        "url": "https://youtube.com/@GLITCH",
+                        "description": "Indie animation channel with amazing webseries, such as Murder Drones and The Amazing Digital Circus.",
+                        "imgUrl": "./glitch.jpg",
+                        "width": 125,
+                        "height": 125
+                    },
+                    {
+                        "title": "MonkeyWrench",
+                        "url": "https://youtube.com/@MonkeyWrenchSeries",
+                        "description": "An indie animated webseries.",
+                        "imgUrl": "./monkeywrench.jpg",
+                        "width": 125,
+                        "height": 125
                     }
                 ]
             }
