@@ -10,6 +10,12 @@
                     "artistUrl": "https://chequerootlurks.tumblr.com/"
                 },
                 {
+                    "imgUrl": "im/KyloCheese.png",
+                    "name": "Kylo Cheese Slap",
+                    "artist": "chequerootlurks",
+                    "artistUrl": "https://chequerootlurks.tumblr.com/"
+                },
+                {
                     "imgUrl": "im/KyloEvil.png",
                     "name": "Kylo Evil",
                     "artist": "chequerootlurks",
@@ -34,8 +40,26 @@
                     "artistUrl": "https://chequerootlurks.tumblr.com/"
                 },
                 {
+                    "imgUrl": "im/KyloHug.png",
+                    "name": "Kylo Hug",
+                    "artist": "chequerootlurks",
+                    "artistUrl": "https://chequerootlurks.tumblr.com/"
+                },
+                {
                     "imgUrl": "im/KyloKisser.png",
                     "name": "Kylo Kisser",
+                    "artist": "chequerootlurks",
+                    "artistUrl": "https://chequerootlurks.tumblr.com/"
+                },
+                {
+                    "imgUrl": "im/KyloLove.png",
+                    "name": "Kylo Love",
+                    "artist": "chequerootlurks",
+                    "artistUrl": "https://chequerootlurks.tumblr.com/"
+                },
+                {
+                    "imgUrl": "im/KyloLUL.png",
+                    "name": "Kylo LUL",
                     "artist": "chequerootlurks",
                     "artistUrl": "https://chequerootlurks.tumblr.com/"
                 },
@@ -88,8 +112,26 @@
                     "artistUrl": "https://chequerootlurks.tumblr.com/"
                 },
                 {
+                    "imgUrl": "im/KyloTragic.png",
+                    "name": "Kylo Tragic",
+                    "artist": "chequerootlurks",
+                    "artistUrl": "https://chequerootlurks.tumblr.com/"
+                },
+                {
+                    "imgUrl": "im/KyloTroll.png",
+                    "name": "Kylo Troll",
+                    "artist": "chequerootlurks",
+                    "artistUrl": "https://chequerootlurks.tumblr.com/"
+                },
+                {
                     "imgUrl": "im/KyloWink.png",
                     "name": "Kylo Wink",
+                    "artist": "chequerootlurks",
+                    "artistUrl": "https://chequerootlurks.tumblr.com/"
+                },
+                {
+                    "imgUrl": "im/KyloWorry.png",
+                    "name": "Kylo Worrying",
                     "artist": "chequerootlurks",
                     "artistUrl": "https://chequerootlurks.tumblr.com/"
                 }
