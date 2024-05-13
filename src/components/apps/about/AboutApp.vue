@@ -92,6 +92,18 @@
                             </a>
                         </span>
                     </div>
+                    <div :class="$style.listItem">
+                        <span>GitHub</span>
+                        <span>
+                            <a
+                                href="https://github.com/grizzogor"
+                                rel="noopener noreferrer"
+                                target="_blank"
+                            >
+                                @grizzogor
+                            </a>
+                        </span>
+                    </div>
                 </div>
                 <h3 :class="$style.listHeading">Gaming</h3>
                 <div :class="$style.list">
