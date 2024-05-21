@@ -10,8 +10,32 @@
                     "artistUrl": "https://chequerootlurks.tumblr.com/"
                 },
                 {
+                    "imgUrl": "im/KyloBarf.png",
+                    "name": "Kylo Barf",
+                    "artist": "chequerootlurks",
+                    "artistUrl": "https://chequerootlurks.tumblr.com/"
+                },
+                {
+                    "imgUrl": "im/KyloBlep.png",
+                    "name": "Kylo Blep",
+                    "artist": "chequerootlurks",
+                    "artistUrl": "https://chequerootlurks.tumblr.com/"
+                },
+                {
+                    "imgUrl": "im/KyloBlush.png",
+                    "name": "Kylo Blush",
+                    "artist": "chequerootlurks",
+                    "artistUrl": "https://chequerootlurks.tumblr.com/"
+                },
+                {
                     "imgUrl": "im/KyloCheese.png",
                     "name": "Kylo Cheese Slap",
+                    "artist": "chequerootlurks",
+                    "artistUrl": "https://chequerootlurks.tumblr.com/"
+                },
+                {
+                    "imgUrl": "im/KyloEepy.png",
+                    "name": "Kylo Eepy",
                     "artist": "chequerootlurks",
                     "artistUrl": "https://chequerootlurks.tumblr.com/"
                 },
@@ -42,6 +66,12 @@
                 {
                     "imgUrl": "im/KyloHug.png",
                     "name": "Kylo Hug",
+                    "artist": "chequerootlurks",
+                    "artistUrl": "https://chequerootlurks.tumblr.com/"
+                },
+                {
+                    "imgUrl": "im/KyloInsomnia.png",
+                    "name": "Kylo Insomnia",
                     "artist": "chequerootlurks",
                     "artistUrl": "https://chequerootlurks.tumblr.com/"
                 },
