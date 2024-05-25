@@ -70,6 +70,12 @@
                     "artistUrl": "https://chequerootlurks.tumblr.com/"
                 },
                 {
+                    "imgUrl": "im/KyloHush.png",
+                    "name": "Kylo Hush",
+                    "artist": "juliandough",
+                    "artistUrl": "https://x.com/bobbycat25"
+                },
+                {
                     "imgUrl": "im/KyloInsomnia.png",
                     "name": "Kylo Insomnia",
                     "artist": "chequerootlurks",
@@ -92,6 +98,12 @@
                     "name": "Kylo LUL",
                     "artist": "chequerootlurks",
                     "artistUrl": "https://chequerootlurks.tumblr.com/"
+                },
+                {
+                    "imgUrl": "im/KyloMew.png",
+                    "name": "Kylo Mewing",
+                    "artist": "juliandough",
+                    "artistUrl": "https://x.com/bobbycat25"
                 },
                 {
                     "imgUrl": "im/KyloOwO.png",
@@ -128,6 +140,12 @@
                     "name": "Kylo Scared",
                     "artist": "chequerootlurks",
                     "artistUrl": "https://chequerootlurks.tumblr.com/"
+                },
+                {
+                    "imgUrl": "im/KyloStare.png",
+                    "name": "Kylo Staring",
+                    "artist": "juliandough",
+                    "artistUrl": "https://x.com/bobbycat25"
                 },
                 {
                     "imgUrl": "im/KyloTearsOfJoy.png",
