@@ -104,6 +104,18 @@
                             </a>
                         </span>
                     </div>
+                    <div :class="$style.listItem">
+                        <span>Reddit</span>
+                        <span>
+                            <a
+                                href="https://reddit.com/user/grizzogor"
+                                rel="noopener noreferrer"
+                                target="_blank"
+                            >
+                                /u/grizzogor
+                            </a>
+                        </span>
+                    </div>
                 </div>
                 <h3 :class="$style.listHeading">Gaming</h3>
                 <div :class="$style.list">
