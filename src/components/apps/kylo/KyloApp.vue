@@ -45,6 +45,9 @@
                         </a>
                         about him.
                     </p>
+                    <p>
+                        I have a reference sheet available of Kylo, please contact me if you want to use it.
+                    </p>
                 </div>
             </div>
         </div>
