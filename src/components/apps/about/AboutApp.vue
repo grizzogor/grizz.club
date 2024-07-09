@@ -151,6 +151,18 @@
                         <span><i class="bi bi-discord" /> Discord</span>
                         <span>@grizzogor</span>
                     </div>
+                    <div :class="$style.listItem">
+                        <span><i class="bi bi-list" /> Multiplayer Game List</span>
+                        <span>
+                            <a
+                                href="https://grizzogor.notion.site/4ab71b61d0f446629781b6cbcf4d197c?v=06078c0a5bdd43acae159a869996a263"
+                                rel="noopener noreferrer"
+                                target="_blank"
+                            >
+                                Open in Notion
+                            </a>
+                        </span>
+                    </div>
                 </div>
 
                 <h3 :class="$style.listHeading">Interests</h3>
@@ -229,7 +241,7 @@
                     </div>
                     <div :class="$style.listItem">
                         <span>Operating System</span>
-                        <span>Windows 11 &amp; Pop!_OS (dual boot)</span>
+                        <span>Windows 11 &amp; Fedora KDE (dual boot)</span>
                     </div>
                 </div>
 
@@ -253,7 +265,7 @@
                     </div>
                     <div :class="$style.listItem">
                         <span>Operating System</span>
-                        <span>Windows 11 &amp; Fedora Linux (dual boot)</span>
+                        <span>Windows 11 &amp; Fedora Workstation (dual boot)</span>
                     </div>
                 </div>
             </div>
