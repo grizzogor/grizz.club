@@ -57,6 +57,30 @@
                 <h3 :class="$style.listHeading">Socials</h3>
                 <div :class="$style.list">
                     <div :class="$style.listItem">
+                        <span>YouTube</span>
+                        <span>
+                            <a
+                                href="https://www.youtube.com/@grizzogor"
+                                rel="noopener noreferrer"
+                                target="_blank"
+                            >
+                                @grizzogor
+                            </a>
+                        </span>
+                    </div>
+                    <div :class="$style.listItem">
+                        <span>Twitch</span>
+                        <span>
+                            <a
+                                href="https://www.twitch.tv/grizzogor"
+                                rel="noopener noreferrer"
+                                target="_blank"
+                            >
+                                grizzogor
+                            </a>
+                        </span>
+                    </div>
+                    <div :class="$style.listItem">
                         <span>Mastodon</span>
                         <span>
                             <a
@@ -77,18 +101,6 @@
                                 target="_blank"
                             >
                                 @grizz@lemmy.world
-                            </a>
-                        </span>
-                    </div>
-                    <div :class="$style.listItem">
-                        <span>YouTube</span>
-                        <span>
-                            <a
-                                href="https://www.youtube.com/@grizzogor"
-                                rel="noopener noreferrer"
-                                target="_blank"
-                            >
-                                @grizzogor
                             </a>
                         </span>
                     </div>
