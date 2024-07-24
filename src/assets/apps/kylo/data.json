@@ -213,8 +213,20 @@
                     "width": 220
                 },
                 {
+                    "imgUrl": "im/KyloBlep.gif",
+                    "name": "Kylo Blep",
+                    "artist": "conniethewolf",
+                    "artistUrl": "https://ych.art/user/conniethewolf"
+                },
+                {
                     "imgUrl": "im/KyloPet.gif",
                     "name": "Kylo Pet",
+                    "artist": "otter-boo",
+                    "artistUrl": "https://www.deviantart.com/otter-boo"
+                },
+                {
+                    "imgUrl": "im/KyloShaker.gif",
+                    "name": "Kylo Shaker",
                     "artist": "otter-boo",
                     "artistUrl": "https://www.deviantart.com/otter-boo"
                 },
@@ -229,6 +241,12 @@
                     "name": "Kylo Tail Wag Right",
                     "artist": "juliandough",
                     "artistUrl": "https://x.com/bobbycat25"
+                },
+                {
+                    "imgUrl": "im/KyloType.gif",
+                    "name": "Kylo Type",
+                    "artist": "otter-boo",
+                    "artistUrl": "https://www.deviantart.com/otter-boo"
                 }
             ]
         }
