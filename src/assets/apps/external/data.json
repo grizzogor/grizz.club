@@ -77,7 +77,7 @@
                     {
                         "title": "Cathode Ray Dude",
                         "url": "https://youtube.com/@CathodeRayDude",
-                        "description": "An amazing technology channel featuring interesting PCs, old A/V equipment, and weird software.",
+                        "description": "An amazing tech channel featuring interesting PCs, old A/V equipment, and weird software.",
                         "imgUrl": "./crd.jpg",
                         "width": 125,
                         "height": 125
@@ -175,6 +175,14 @@
                         "url": "https://youtube.com/@TechTangents",
                         "description": "Covering old computers and technology, as well as programming and preservation efforts.",
                         "imgUrl": "./techtangents.jpg",
+                        "width": 125,
+                        "height": 125
+                    },
+                    {
+                        "title": "clabretro",
+                        "url": "https://youtube.com/@clabretro",
+                        "description": "Covering old networking equipment from the likes of Cisco and Intel.",
+                        "imgUrl": "./clabretro.jpg",
                         "width": 125,
                         "height": 125
                     }
