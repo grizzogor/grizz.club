@@ -280,6 +280,30 @@
                         <span>Windows 11 &amp; Fedora Workstation (dual boot)</span>
                     </div>
                 </div>
+
+                <h3 :class="$style.listHeading">Laptop 2</h3>
+                <div :class="$style.list">
+                    <div :class="$style.listItem">
+                        <span>Model</span>
+                        <span>Apple MacBook Air 13" (2024)</span>
+                    </div>
+                    <div :class="$style.listItem">
+                        <span>CPU</span>
+                        <span>Apple M3 (8c CPU, 10c GPU)</span>
+                    </div>
+                    <div :class="$style.listItem">
+                        <span>RAM</span>
+                        <span>16 GB</span>
+                    </div>
+                    <div :class="$style.listItem">
+                        <span>Storage</span>
+                        <span>512 GB SSD</span>
+                    </div>
+                    <div :class="$style.listItem">
+                        <span>Operating System</span>
+                        <span>macOS</span>
+                    </div>
+                </div>
             </div>
         </div>
     </WindowBase>
