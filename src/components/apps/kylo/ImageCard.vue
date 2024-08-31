@@ -13,9 +13,9 @@
                 :src="imgUrl"
                 :class="$style.img"
                 :style="{
-                    transform: `rotateX(${imgRotateX * -60}deg) rotateY(${
-                        imgRotateY * 60
-                    }deg)`,
+                    transform: `perspective(500px) rotateX(${
+                        imgRotateX * -60
+                    }deg) rotateY(${imgRotateY * 60}deg)`,
                     filter: `brightness(${imgBrightness * 100}%)`,
                 }"
                 :alt="`${name} image`"
@@ -82,8 +82,10 @@ export default {
 }
 
 .imgContainer {
-    overflow: hidden;
     margin-bottom: 4px;
+    transform-style: preserve-3d;
+    perspective: 400px;
+    overflow: visible;
 }
 
 .img {
@@ -92,6 +94,8 @@ export default {
     height: 100%;
 
     transition: transform 0.1s ease, filter 0.1s ease;
+
+    overflow: visible;
 }
 
 .name {
