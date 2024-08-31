@@ -86,6 +86,7 @@ export default {
     transform-style: preserve-3d;
     perspective: 400px;
     overflow: visible;
+    pointer-events: none;
 }
 
 .img {
@@ -96,6 +97,7 @@ export default {
     transition: transform 0.1s ease, filter 0.1s ease;
 
     overflow: visible;
+    pointer-events: auto;
 }
 
 .name {
