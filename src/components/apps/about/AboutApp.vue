@@ -57,6 +57,30 @@
                 <h3 :class="$style.listHeading">Socials</h3>
                 <div :class="$style.list">
                     <div :class="$style.listItem">
+                        <span>YouTube</span>
+                        <span>
+                            <a
+                                href="https://www.youtube.com/@grizzogor"
+                                rel="noopener noreferrer"
+                                target="_blank"
+                            >
+                                @grizzogor
+                            </a>
+                        </span>
+                    </div>
+                    <div :class="$style.listItem">
+                        <span>Twitch</span>
+                        <span>
+                            <a
+                                href="https://www.twitch.tv/grizzogor"
+                                rel="noopener noreferrer"
+                                target="_blank"
+                            >
+                                grizzogor
+                            </a>
+                        </span>
+                    </div>
+                    <div :class="$style.listItem">
                         <span>Mastodon</span>
                         <span>
                             <a
@@ -81,18 +105,6 @@
                         </span>
                     </div>
                     <div :class="$style.listItem">
-                        <span>YouTube</span>
-                        <span>
-                            <a
-                                href="https://www.youtube.com/@grizzogor"
-                                rel="noopener noreferrer"
-                                target="_blank"
-                            >
-                                @grizzogor
-                            </a>
-                        </span>
-                    </div>
-                    <div :class="$style.listItem">
                         <span>GitHub</span>
                         <span>
                             <a
@@ -101,6 +113,18 @@
                                 target="_blank"
                             >
                                 @grizzogor
+                            </a>
+                        </span>
+                    </div>
+                    <div :class="$style.listItem">
+                        <span>Reddit</span>
+                        <span>
+                            <a
+                                href="https://reddit.com/user/grizzogor"
+                                rel="noopener noreferrer"
+                                target="_blank"
+                            >
+                                /u/grizzogor
                             </a>
                         </span>
                     </div>
@@ -138,6 +162,18 @@
                     <div :class="$style.listItem">
                         <span><i class="bi bi-discord" /> Discord</span>
                         <span>@grizzogor</span>
+                    </div>
+                    <div :class="$style.listItem">
+                        <span><i class="bi bi-list" /> Multiplayer Game List</span>
+                        <span>
+                            <a
+                                href="https://grizzogor.notion.site/4ab71b61d0f446629781b6cbcf4d197c?v=06078c0a5bdd43acae159a869996a263"
+                                rel="noopener noreferrer"
+                                target="_blank"
+                            >
+                                Open in Notion
+                            </a>
+                        </span>
                     </div>
                 </div>
 
@@ -217,7 +253,7 @@
                     </div>
                     <div :class="$style.listItem">
                         <span>Operating System</span>
-                        <span>Windows 11 &amp; Pop!_OS (dual boot)</span>
+                        <span>Windows 11 &amp; Fedora KDE (dual boot)</span>
                     </div>
                 </div>
 
@@ -241,7 +277,31 @@
                     </div>
                     <div :class="$style.listItem">
                         <span>Operating System</span>
-                        <span>Windows 11 &amp; Fedora Linux (dual boot)</span>
+                        <span>Windows 11 &amp; Fedora Workstation (dual boot)</span>
+                    </div>
+                </div>
+
+                <h3 :class="$style.listHeading">Laptop 2</h3>
+                <div :class="$style.list">
+                    <div :class="$style.listItem">
+                        <span>Model</span>
+                        <span>Apple MacBook Air 13" (2024)</span>
+                    </div>
+                    <div :class="$style.listItem">
+                        <span>CPU</span>
+                        <span>Apple M3 (8c CPU, 10c GPU)</span>
+                    </div>
+                    <div :class="$style.listItem">
+                        <span>RAM</span>
+                        <span>16 GB</span>
+                    </div>
+                    <div :class="$style.listItem">
+                        <span>Storage</span>
+                        <span>512 GB SSD</span>
+                    </div>
+                    <div :class="$style.listItem">
+                        <span>Operating System</span>
+                        <span>macOS</span>
                     </div>
                 </div>
             </div>

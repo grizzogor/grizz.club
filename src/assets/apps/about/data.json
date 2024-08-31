@@ -18,15 +18,15 @@
         },
         {
             "imgUrl": "./cli.gif",
-            "title": "CLI"
+            "title": "CLI Junkie"
         },
         {
-            "imgUrl": "./vim_the_editor.png",
-            "title": "vim the editor"
+            "imgUrl": "./vscodebadge.png",
+            "title": "VS Code"
         },
         {
-            "imgUrl": "./pride.gif",
-            "title": "Pride"
+            "imgUrl": "./firefox.png",
+            "title": "Firefox"
         },
         {
             "imgUrl": "./fedora_powered.png",

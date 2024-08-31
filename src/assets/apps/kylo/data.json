@@ -106,6 +106,12 @@
                     "artistUrl": "https://x.com/bobbycat25"
                 },
                 {
+                    "imgUrl": "im/KyloMelon.png",
+                    "name": "Kylo Melon",
+                    "artist": "juliandough",
+                    "artistUrl": "https://x.com/bobbycat25"
+                },
+                {
                     "imgUrl": "im/KyloOwO.png",
                     "name": "Kylo OwO",
                     "artist": "chequerootlurks",
@@ -114,6 +120,12 @@
                 {
                     "imgUrl": "im/KyloPanic.png",
                     "name": "Kylo Panic",
+                    "artist": "chequerootlurks",
+                    "artistUrl": "https://chequerootlurks.tumblr.com/"
+                },
+                {
+                    "imgUrl": "im/KyloPicker.png",
+                    "name": "Kylo Picker (edit)",
                     "artist": "chequerootlurks",
                     "artistUrl": "https://chequerootlurks.tumblr.com/"
                 },
@@ -140,6 +152,12 @@
                     "name": "Kylo Scared",
                     "artist": "chequerootlurks",
                     "artistUrl": "https://chequerootlurks.tumblr.com/"
+                },
+                {
+                    "imgUrl": "im/KyloSkibidi.png",
+                    "name": "Kylo Skibidi",
+                    "artist": "juliandough",
+                    "artistUrl": "https://x.com/bobbycat25"
                 },
                 {
                     "imgUrl": "im/KyloStare.png",
@@ -182,6 +200,11 @@
                     "name": "Kylo Worrying",
                     "artist": "chequerootlurks",
                     "artistUrl": "https://chequerootlurks.tumblr.com/"
+                },
+                {
+                    "imgUrl": "im/KyloYippie.png",
+                    "name": "Kylo Yippie",
+                    "artist": "bluerhapsodyy"
                 }
             ]
         },
@@ -201,8 +224,38 @@
                     "width": 220
                 },
                 {
+                    "imgUrl": "im/KyloBlep.gif",
+                    "name": "Kylo Blep",
+                    "artist": "conniethewolf",
+                    "artistUrl": "https://ych.art/user/conniethewolf"
+                },
+                {
                     "imgUrl": "im/KyloPet.gif",
                     "name": "Kylo Pet",
+                    "artist": "otter-boo",
+                    "artistUrl": "https://www.deviantart.com/otter-boo"
+                },
+                {
+                    "imgUrl": "im/KyloShaker.gif",
+                    "name": "Kylo Shaker",
+                    "artist": "otter-boo",
+                    "artistUrl": "https://www.deviantart.com/otter-boo"
+                },
+                {
+                    "imgUrl": "im/KyloTailWagL.gif",
+                    "name": "Kylo Tail Wag Left",
+                    "artist": "juliandough",
+                    "artistUrl": "https://x.com/bobbycat25"
+                },
+                {
+                    "imgUrl": "im/KyloTailWagR.gif",
+                    "name": "Kylo Tail Wag Right",
+                    "artist": "juliandough",
+                    "artistUrl": "https://x.com/bobbycat25"
+                },
+                {
+                    "imgUrl": "im/KyloType.gif",
+                    "name": "Kylo Type",
                     "artist": "otter-boo",
                     "artistUrl": "https://www.deviantart.com/otter-boo"
                 }
