@@ -28,6 +28,11 @@
                     "artistUrl": "https://chequerootlurks.tumblr.com/"
                 },
                 {
+                    "imgUrl": "im/KyloBrick.png",
+                    "name": "Kylo Bricked",
+                    "artist": "rosol (Discord)"
+                },
+                {
                     "imgUrl": "im/KyloCheese.png",
                     "name": "Kylo Cheese Slap",
                     "artist": "chequerootlurks",
@@ -50,6 +55,11 @@
                     "name": "Kylo Eyeroll",
                     "artist": "chequerootlurks",
                     "artistUrl": "https://chequerootlurks.tumblr.com/"
+                },
+                {
+                    "imgUrl": "im/KyloFrench.png",
+                    "name": "Kylo French Girl Pose",
+                    "artist": "rosol (Discord)"
                 },
                 {
                     "imgUrl": "im/KyloHappy.png",
@@ -158,6 +168,11 @@
                     "name": "Kylo Skibidi",
                     "artist": "juliandough",
                     "artistUrl": "https://x.com/bobbycat25"
+                },
+                {
+                    "imgUrl": "im/KyloSmart.png",
+                    "name": "Kylo Smart",
+                    "artist": "rosol (Discord)"
                 },
                 {
                     "imgUrl": "im/KyloStare.png",
