@@ -76,6 +76,8 @@ export default {
     animation-duration: 0.5s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
+
+    filter: drop-shadow(0 0 4px white);
 }
 
 @keyframes backgroundImgIntro {
