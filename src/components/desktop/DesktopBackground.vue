@@ -6,6 +6,11 @@
             tag="Wave background top right"
         />
         <img
+            src="@/assets/img/desktop/KyloHappy.png"
+            :class="$style.kylo"
+            tag="Kylo Happy"
+        />
+        <img
             src="@/assets/img/desktop/wavetr.png"
             :class="{ [$style.wavebl]: true, [$style.wave]: true }"
             tag="Wave background bottom left"
@@ -42,6 +47,8 @@ export default {
     animation-duration: 0.5s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
+
+    z-index: 1;
 }
 
 .wavetr {
@@ -53,6 +60,22 @@ export default {
     bottom: 0;
     left: 0;
     transform: rotateZ(180deg);
+}
+
+.kylo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: min(20vh, 20vw);
+    z-index: 2;
+    opacity: 0;
+
+    animation-name: backgroundImgIntro;
+    animation-delay: 0.75s;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
 }
 
 @keyframes backgroundImgIntro {
