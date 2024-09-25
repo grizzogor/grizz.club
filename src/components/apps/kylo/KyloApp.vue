@@ -36,7 +36,7 @@
                         For more information about the specifications of Kylo,
                         visit my
                         <a
-                            href="https://nx.grizz.club/s/cxB6PcY5QxsAScN"
+                            href="https://nx.grizz.club/s/KyloByteNotes"
                             rel="noopener noreferrer"
                             target="_blank"
                         >

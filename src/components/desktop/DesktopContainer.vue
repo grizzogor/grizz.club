@@ -19,7 +19,7 @@
                         @activate="onIconActivate"
                         @launch="
                             handleOpenLink(
-                                'https://nx.grizz.club/s/JKdYRzMkjSnzHca'
+                                'https://nx.grizz.club/s/KyloByte'
                             )
                         "
                     />
@@ -31,7 +31,7 @@
                         @activate="onIconActivate"
                         @launch="
                             handleOpenLink(
-                                'https://nx.grizz.club/s/LCGcfdBo5T5s9t2'
+                                'https://nx.grizz.club/s/GrizzClubDownloads'
                             )
                         "
                     />
