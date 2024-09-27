@@ -54,7 +54,7 @@
                     </div>
                 </div>
 
-                <h3 :class="$style.listHeading">Socials</h3>
+                <h3 :class="$style.listHeading">Socials (sorted from most to least used)</h3>
                 <div :class="$style.list">
                     <div :class="$style.listItem">
                         <span>YouTube</span>
@@ -81,6 +81,30 @@
                         </span>
                     </div>
                     <div :class="$style.listItem">
+                        <span>Bluesky</span>
+                        <span>
+                            <a
+                                href="https://bsky.app/profile/grizz.club"
+                                rel="noopener noreferrer"
+                                target="_blank"
+                            >
+                                @grizz.club
+                            </a>
+                        </span>
+                    </div>
+                    <div :class="$style.listItem">
+                        <span>GitHub</span>
+                        <span>
+                            <a
+                                href="https://github.com/grizzogor"
+                                rel="noopener noreferrer"
+                                target="_blank"
+                            >
+                                @grizzogor
+                            </a>
+                        </span>
+                    </div>
+                    <div :class="$style.listItem">
                         <span>Mastodon</span>
                         <span>
                             <a
@@ -101,18 +125,6 @@
                                 target="_blank"
                             >
                                 @grizz@lemmy.world
-                            </a>
-                        </span>
-                    </div>
-                    <div :class="$style.listItem">
-                        <span>GitHub</span>
-                        <span>
-                            <a
-                                href="https://github.com/grizzogor"
-                                rel="noopener noreferrer"
-                                target="_blank"
-                            >
-                                @grizzogor
                             </a>
                         </span>
                     </div>
@@ -192,9 +204,6 @@
                             <ul>
                                 <li>Windows XP through 11</li>
                                 <li>Linux</li>
-                                <li>
-                                    Fediverse applications (Mastodon and Lemmy)
-                                </li>
                             </ul>
                         </li>
                         <li>
@@ -222,6 +231,7 @@
                             Furry Fandom
                             <ul>
                                 <li>Protogens</li>
+                                <li>Synths</li>
                                 <li>
                                     Designing my own fursona:
                                     <a
@@ -261,30 +271,6 @@
                 <div :class="$style.list">
                     <div :class="$style.listItem">
                         <span>Model</span>
-                        <span>Lenovo ThinkPad T14 Gen 2</span>
-                    </div>
-                    <div :class="$style.listItem">
-                        <span>CPU</span>
-                        <span>AMD Ryzen 7 5850U</span>
-                    </div>
-                    <div :class="$style.listItem">
-                        <span>RAM</span>
-                        <span>16 GB</span>
-                    </div>
-                    <div :class="$style.listItem">
-                        <span>Storage</span>
-                        <span>512 GB SSD</span>
-                    </div>
-                    <div :class="$style.listItem">
-                        <span>Operating System</span>
-                        <span>Windows 11 &amp; Fedora Workstation (dual boot)</span>
-                    </div>
-                </div>
-
-                <h3 :class="$style.listHeading">Laptop 2</h3>
-                <div :class="$style.list">
-                    <div :class="$style.listItem">
-                        <span>Model</span>
                         <span>Apple MacBook Air 13" (2024)</span>
                     </div>
                     <div :class="$style.listItem">
@@ -302,6 +288,30 @@
                     <div :class="$style.listItem">
                         <span>Operating System</span>
                         <span>macOS</span>
+                    </div>
+                </div>
+
+                <h3 :class="$style.listHeading">Laptop 2</h3>
+                <div :class="$style.list">
+                    <div :class="$style.listItem">
+                        <span>Model</span>
+                        <span>Lenovo ThinkPad T14 Gen 2</span>
+                    </div>
+                    <div :class="$style.listItem">
+                        <span>CPU</span>
+                        <span>AMD Ryzen 7 5850U</span>
+                    </div>
+                    <div :class="$style.listItem">
+                        <span>RAM</span>
+                        <span>16 GB</span>
+                    </div>
+                    <div :class="$style.listItem">
+                        <span>Storage</span>
+                        <span>512 GB SSD</span>
+                    </div>
+                    <div :class="$style.listItem">
+                        <span>Operating System</span>
+                        <span>Windows 11 &amp; Fedora Workstation (dual boot)</span>
                     </div>
                 </div>
             </div>
