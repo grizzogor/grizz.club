@@ -108,11 +108,11 @@
                         <span>Mastodon</span>
                         <span>
                             <a
-                                href="https://mstdn.social/@grizz"
+                                href="https://furry.engineer/@grizz"
                                 rel="noopener noreferrer me"
                                 target="_blank"
                             >
-                                @grizz@mstdn.social
+                                @grizz@furry.engineer
                             </a>
                         </span>
                     </div>
