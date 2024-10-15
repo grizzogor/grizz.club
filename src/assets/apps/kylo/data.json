@@ -4,6 +4,11 @@
             "title": "Stickers",
             "items": [
                 {
+                    "imgUrl": "im/Kylo3c.png",
+                    "name": "Kylo :3c",
+                    "artist": "rosol (Discord)"
+                },
+                {
                     "imgUrl": "im/KyloAngry.png",
                     "name": "Kylo Angry",
                     "artist": "chequerootlurks",
