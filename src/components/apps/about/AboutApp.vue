@@ -290,30 +290,6 @@
                         <span>macOS</span>
                     </div>
                 </div>
-
-                <h3 :class="$style.listHeading">Laptop 2</h3>
-                <div :class="$style.list">
-                    <div :class="$style.listItem">
-                        <span>Model</span>
-                        <span>Lenovo ThinkPad T14 Gen 2</span>
-                    </div>
-                    <div :class="$style.listItem">
-                        <span>CPU</span>
-                        <span>AMD Ryzen 7 5850U</span>
-                    </div>
-                    <div :class="$style.listItem">
-                        <span>RAM</span>
-                        <span>16 GB</span>
-                    </div>
-                    <div :class="$style.listItem">
-                        <span>Storage</span>
-                        <span>512 GB SSD</span>
-                    </div>
-                    <div :class="$style.listItem">
-                        <span>Operating System</span>
-                        <span>Windows 11 &amp; Fedora Workstation (dual boot)</span>
-                    </div>
-                </div>
             </div>
         </div>
     </WindowBase>
