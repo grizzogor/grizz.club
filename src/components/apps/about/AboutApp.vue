@@ -32,7 +32,7 @@
                 <div :class="$style.well">
                     <p>Hello!</p>
                     <p>
-                        I'm grizzogor, a 21 year old autistic techie (he/him)
+                        I'm grizzogor, a 22 year old autistic techie (he/him)
                         messing around with technology in order to learn more
                         about it.
                     </p>
