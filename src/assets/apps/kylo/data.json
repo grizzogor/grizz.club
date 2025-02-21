@@ -57,7 +57,7 @@
                     "imgUrl": "im/KyloDemise.png",
                     "name": "Kylo Demise",
                     "artist": "juliandough",
-                    "artistUrl": "https://bsky.app/profile/juliandoes.art"
+                    "artistUrl": "https://x.com/bobbycat25"
                 },
                 {
                     "imgUrl": "im/KyloDentge.png",
@@ -81,11 +81,6 @@
                     "name": "Kylo Eyeroll",
                     "artist": "chequerootlurks",
                     "artistUrl": "https://chequerootlurks.tumblr.com/"
-                },
-                {
-                    "imgUrl": "im/KyloFloshed.png",
-                    "name": "Kylo Floshed",
-                    "artist": "dergsalot"
                 },
                 {
                     "imgUrl": "im/KyloFrench.png",
@@ -124,7 +119,7 @@
                     "imgUrl": "im/KyloHush.png",
                     "name": "Kylo Hush",
                     "artist": "juliandough",
-                    "artistUrl": "https://bsky.app/profile/juliandoes.art"
+                    "artistUrl": "https://x.com/bobbycat25"
                 },
                 {
                     "imgUrl": "im/KyloInsomnia.png",
@@ -154,13 +149,13 @@
                     "imgUrl": "im/KyloMew.png",
                     "name": "Kylo Mewing",
                     "artist": "juliandough",
-                    "artistUrl": "https://bsky.app/profile/juliandoes.art"
+                    "artistUrl": "https://x.com/bobbycat25"
                 },
                 {
                     "imgUrl": "im/KyloMelon.png",
                     "name": "Kylo Melon",
                     "artist": "juliandough",
-                    "artistUrl": "https://bsky.app/profile/juliandoes.art"
+                    "artistUrl": "https://x.com/bobbycat25"
                 },
                 {
                     "imgUrl": "im/KyloNoRAM.png",
@@ -213,7 +208,7 @@
                     "imgUrl": "im/KyloSkibidi.png",
                     "name": "Kylo Skibidi",
                     "artist": "juliandough",
-                    "artistUrl": "https://bsky.app/profile/juliandoes.art"
+                    "artistUrl": "https://x.com/bobbycat25"
                 },
                 {
                     "imgUrl": "im/KyloSmart.png",
@@ -224,7 +219,7 @@
                     "imgUrl": "im/KyloStare.png",
                     "name": "Kylo Staring",
                     "artist": "juliandough",
-                    "artistUrl": "https://bsky.app/profile/juliandoes.art"
+                    "artistUrl": "https://x.com/bobbycat25"
                 },
                 {
                     "imgUrl": "im/KyloTearsOfJoy.png",
@@ -275,15 +270,13 @@
                 {
                     "imgUrl": "im/KyloHi.gif",
                     "name": "Kylo Hi",
-                    "artist": "natezacate",
-                    "artistUrl": "https://x.com/natezacate",
+                    "artist": "nnathan (Discord)",
                     "width": 220
                 },
                 {
                     "imgUrl": "im/KyloBye.gif",
                     "name": "Kylo Bye",
-                    "artist": "natezacate",
-                    "artistUrl": "https://x.com/natezacate",
+                    "artist": "nnathan (Discord)",
                     "width": 220
                 },
                 {
@@ -291,6 +284,24 @@
                     "name": "Kylo Blep",
                     "artist": "conniethewolf",
                     "artistUrl": "https://ych.art/user/conniethewolf"
+                },
+                {
+                    "imgUrl": "im/KyloNodL.gif",
+                    "name": "Kylo Nod Left",
+                    "artist": "otter-boo",
+                    "artistUrl": "https://www.deviantart.com/otter-boo"
+                },
+                {
+                    "imgUrl": "im/KyloNodR.gif",
+                    "name": "Kylo Nod Right",
+                    "artist": "otter-boo",
+                    "artistUrl": "https://www.deviantart.com/otter-boo"
+                },
+                {
+                    "imgUrl": "im/KyloNodFast.gif",
+                    "name": "Kylo Nod Fast",
+                    "artist": "otter-boo",
+                    "artistUrl": "https://www.deviantart.com/otter-boo"
                 },
                 {
                     "imgUrl": "im/KyloPet.gif",
@@ -308,13 +319,13 @@
                     "imgUrl": "im/KyloTailWagL.gif",
                     "name": "Kylo Tail Wag Left",
                     "artist": "juliandough",
-                    "artistUrl": "https://bsky.app/profile/juliandoes.art"
+                    "artistUrl": "https://x.com/bobbycat25"
                 },
                 {
                     "imgUrl": "im/KyloTailWagR.gif",
                     "name": "Kylo Tail Wag Right",
                     "artist": "juliandough",
-                    "artistUrl": "https://bsky.app/profile/juliandoes.art"
+                    "artistUrl": "https://x.com/bobbycat25"
                 },
                 {
                     "imgUrl": "im/KyloType.gif",
