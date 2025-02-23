@@ -5,262 +5,299 @@
             "items": [
                 {
                     "imgUrl": "im/Kylo3c.png",
-                    "name": "Kylo :3c",
+                    "name": ":3c",
                     "artist": "rosol (Discord)"
                 },
                 {
+                    "imgUrl": "im/KyloAbsoluteCinema.png",
+                    "name": "Absolute Cinema",
+                    "artist": "bluerhapsodyy",
+                    "artistUrl": "https://bsky.app/profile/bluerhapsodyy.bsky.social"
+                },
+                {
                     "imgUrl": "im/KyloAngry.png",
-                    "name": "Kylo Angry",
+                    "name": "Angry",
                     "artist": "chequerootlurks",
                     "artistUrl": "https://chequerootlurks.tumblr.com/"
                 },
                 {
                     "imgUrl": "im/KyloAtMyLimit.png",
-                    "name": "Kylo At My Limit",
+                    "name": "At My Limit",
                     "artist": "rosol (Discord)"
                 },
                 {
                     "imgUrl": "im/KyloAwww.png",
-                    "name": "Kylo Awww",
+                    "name": "Awww",
                     "artist": "rosol (Discord)"
                 },
                 {
                     "imgUrl": "im/KyloBarf.png",
-                    "name": "Kylo Barf",
+                    "name": "Barf",
                     "artist": "chequerootlurks",
                     "artistUrl": "https://chequerootlurks.tumblr.com/"
                 },
                 {
                     "imgUrl": "im/KyloBlep.png",
-                    "name": "Kylo Blep",
+                    "name": "Blep",
                     "artist": "chequerootlurks",
                     "artistUrl": "https://chequerootlurks.tumblr.com/"
                 },
                 {
                     "imgUrl": "im/KyloBlush.png",
-                    "name": "Kylo Blush",
+                    "name": "Blush",
                     "artist": "chequerootlurks",
                     "artistUrl": "https://chequerootlurks.tumblr.com/"
                 },
                 {
                     "imgUrl": "im/KyloBrick.png",
-                    "name": "Kylo Bricked",
+                    "name": "Bricked",
                     "artist": "rosol (Discord)"
                 },
                 {
                     "imgUrl": "im/KyloCheese.png",
-                    "name": "Kylo Cheese Slap",
+                    "name": "Cheese Slap",
                     "artist": "chequerootlurks",
                     "artistUrl": "https://chequerootlurks.tumblr.com/"
                 },
                 {
                     "imgUrl": "im/KyloDemise.png",
-                    "name": "Kylo Demise",
+                    "name": "Demise",
                     "artist": "juliandough",
                     "artistUrl": "https://x.com/bobbycat25"
                 },
                 {
                     "imgUrl": "im/KyloDentge.png",
-                    "name": "Kylo Dentge",
+                    "name": "Dentge",
                     "artist": "rosol (Discord)"
                 },
                 {
                     "imgUrl": "im/KyloEepy.png",
-                    "name": "Kylo Eepy",
+                    "name": "Eepy",
                     "artist": "chequerootlurks",
                     "artistUrl": "https://chequerootlurks.tumblr.com/"
                 },
                 {
                     "imgUrl": "im/KyloEvil.png",
-                    "name": "Kylo Evil",
+                    "name": "Evil",
                     "artist": "chequerootlurks",
                     "artistUrl": "https://chequerootlurks.tumblr.com/"
                 },
                 {
+                    "imgUrl": "im/KyloEyebrow.png",
+                    "name": "Eyebrow",
+                    "artist": "bluerhapsodyy",
+                    "artistUrl": "https://bsky.app/profile/bluerhapsodyy.bsky.social"
+                },
+                {
                     "imgUrl": "im/KyloEyeroll.png",
-                    "name": "Kylo Eyeroll",
+                    "name": "Eyeroll",
                     "artist": "chequerootlurks",
                     "artistUrl": "https://chequerootlurks.tumblr.com/"
                 },
                 {
                     "imgUrl": "im/KyloFrench.png",
-                    "name": "Kylo French Girl Pose",
+                    "name": "French Girl Pose",
                     "artist": "rosol (Discord)"
                 },
                 {
                     "imgUrl": "im/KyloGasp.png",
-                    "name": "Kylo Gasp",
+                    "name": "Gasp",
                     "artist": "rosol (Discord)"
                 },
                 {
+                    "imgUrl": "im/KyloGoober.png",
+                    "name": "Goober",
+                    "artist": "bluerhapsodyy",
+                    "artistUrl": "https://bsky.app/profile/bluerhapsodyy.bsky.social"
+                },
+                {
                     "imgUrl": "im/KyloGun.png",
-                    "name": "Kylo Gun",
+                    "name": "Gun",
                     "artist": "rosol (Discord)"
                 },
                 {
                     "imgUrl": "im/KyloHappy.png",
-                    "name": "Kylo Happy",
+                    "name": "Happy",
                     "artist": "chequerootlurks",
                     "artistUrl": "https://chequerootlurks.tumblr.com/"
                 },
                 {
                     "imgUrl": "im/KyloHeart.png",
-                    "name": "Kylo Heart",
+                    "name": "Heart",
                     "artist": "chequerootlurks",
                     "artistUrl": "https://chequerootlurks.tumblr.com/"
                 },
                 {
                     "imgUrl": "im/KyloHug.png",
-                    "name": "Kylo Hug",
+                    "name": "Hug",
                     "artist": "chequerootlurks",
                     "artistUrl": "https://chequerootlurks.tumblr.com/"
                 },
                 {
                     "imgUrl": "im/KyloHush.png",
-                    "name": "Kylo Hush",
+                    "name": "Hush",
                     "artist": "juliandough",
                     "artistUrl": "https://x.com/bobbycat25"
                 },
                 {
                     "imgUrl": "im/KyloInsomnia.png",
-                    "name": "Kylo Insomnia",
+                    "name": "Insomnia",
                     "artist": "chequerootlurks",
                     "artistUrl": "https://chequerootlurks.tumblr.com/"
                 },
                 {
                     "imgUrl": "im/KyloKisser.png",
-                    "name": "Kylo Kisser",
+                    "name": "Kisser",
                     "artist": "chequerootlurks",
                     "artistUrl": "https://chequerootlurks.tumblr.com/"
                 },
                 {
                     "imgUrl": "im/KyloLove.png",
-                    "name": "Kylo Love",
+                    "name": "Love",
                     "artist": "chequerootlurks",
                     "artistUrl": "https://chequerootlurks.tumblr.com/"
                 },
                 {
                     "imgUrl": "im/KyloLUL.png",
-                    "name": "Kylo LUL",
+                    "name": "LUL",
                     "artist": "chequerootlurks",
                     "artistUrl": "https://chequerootlurks.tumblr.com/"
                 },
                 {
                     "imgUrl": "im/KyloMew.png",
-                    "name": "Kylo Mewing",
+                    "name": "Mewing",
                     "artist": "juliandough",
                     "artistUrl": "https://x.com/bobbycat25"
                 },
                 {
                     "imgUrl": "im/KyloMelon.png",
-                    "name": "Kylo Melon",
+                    "name": "Melon",
                     "artist": "juliandough",
                     "artistUrl": "https://x.com/bobbycat25"
                 },
                 {
                     "imgUrl": "im/KyloNoRAM.png",
-                    "name": "Kylo No RAM?",
+                    "name": "No RAM?",
                     "artist": "rosol (Discord)"
                 },
                 {
                     "imgUrl": "im/KyloOwO.png",
-                    "name": "Kylo OwO",
+                    "name": "OwO",
                     "artist": "chequerootlurks",
                     "artistUrl": "https://chequerootlurks.tumblr.com/"
                 },
                 {
                     "imgUrl": "im/KyloPanic.png",
-                    "name": "Kylo Panic",
+                    "name": "Panic",
                     "artist": "chequerootlurks",
                     "artistUrl": "https://chequerootlurks.tumblr.com/"
                 },
                 {
                     "imgUrl": "im/KyloPicker.png",
-                    "name": "Kylo Picker (edit)",
+                    "name": "Picker (edit)",
                     "artist": "chequerootlurks",
                     "artistUrl": "https://chequerootlurks.tumblr.com/"
                 },
                 {
                     "imgUrl": "im/KyloPog.png",
-                    "name": "Kylo Pog",
+                    "name": "Pog",
                     "artist": "chequerootlurks",
                     "artistUrl": "https://chequerootlurks.tumblr.com/"
                 },
                 {
                     "imgUrl": "im/KyloPuppyEyes.png",
-                    "name": "Kylo Puppy Eyes",
+                    "name": "Puppy Eyes",
                     "artist": "chequerootlurks",
                     "artistUrl": "https://chequerootlurks.tumblr.com/"
                 },
                 {
+                    "imgUrl": "im/KyloRah.png",
+                    "name": "Rah",
+                    "artist": "bluerhapsodyy",
+                    "artistUrl": "https://bsky.app/profile/bluerhapsodyy.bsky.social"
+                },
+                {
                     "imgUrl": "im/KyloSad.png",
-                    "name": "Kylo Sad",
+                    "name": "Sad",
                     "artist": "chequerootlurks",
                     "artistUrl": "https://chequerootlurks.tumblr.com/"
                 },
                 {
                     "imgUrl": "im/KyloScared.png",
-                    "name": "Kylo Scared",
+                    "name": "Scared",
                     "artist": "chequerootlurks",
                     "artistUrl": "https://chequerootlurks.tumblr.com/"
                 },
                 {
+                    "imgUrl": "im/KyloScheming.png",
+                    "name": "Scheming",
+                    "artist": "bluerhapsodyy",
+                    "artistUrl": "https://bsky.app/profile/bluerhapsodyy.bsky.social"
+                },
+                {
                     "imgUrl": "im/KyloSkibidi.png",
-                    "name": "Kylo Skibidi",
+                    "name": "Skibidi",
                     "artist": "juliandough",
                     "artistUrl": "https://x.com/bobbycat25"
                 },
                 {
                     "imgUrl": "im/KyloSmart.png",
-                    "name": "Kylo Smart",
+                    "name": "Smart",
                     "artist": "rosol (Discord)"
                 },
                 {
                     "imgUrl": "im/KyloStare.png",
-                    "name": "Kylo Staring",
+                    "name": "Staring",
                     "artist": "juliandough",
                     "artistUrl": "https://x.com/bobbycat25"
                 },
                 {
                     "imgUrl": "im/KyloTearsOfJoy.png",
-                    "name": "Kylo Tears of Joy",
+                    "name": "Tears of Joy",
                     "artist": "chequerootlurks",
                     "artistUrl": "https://chequerootlurks.tumblr.com/"
                 },
                 {
                     "imgUrl": "im/KyloThinking.png",
-                    "name": "Kylo Thinking",
+                    "name": "Thinking",
                     "artist": "chequerootlurks",
                     "artistUrl": "https://chequerootlurks.tumblr.com/"
                 },
                 {
                     "imgUrl": "im/KyloTragic.png",
-                    "name": "Kylo Tragic",
+                    "name": "Tragic",
                     "artist": "chequerootlurks",
                     "artistUrl": "https://chequerootlurks.tumblr.com/"
                 },
                 {
                     "imgUrl": "im/KyloTroll.png",
-                    "name": "Kylo Troll",
+                    "name": "Troll",
                     "artist": "chequerootlurks",
                     "artistUrl": "https://chequerootlurks.tumblr.com/"
                 },
                 {
+                    "imgUrl": "im/KyloWailing.png",
+                    "name": "Wailing",
+                    "artist": "bluerhapsodyy",
+                    "artistUrl": "https://bsky.app/profile/bluerhapsodyy.bsky.social"
+                },
+                {
                     "imgUrl": "im/KyloWink.png",
-                    "name": "Kylo Wink",
+                    "name": "Wink",
                     "artist": "chequerootlurks",
                     "artistUrl": "https://chequerootlurks.tumblr.com/"
                 },
                 {
                     "imgUrl": "im/KyloWorry.png",
-                    "name": "Kylo Worrying",
+                    "name": "Worrying",
                     "artist": "chequerootlurks",
                     "artistUrl": "https://chequerootlurks.tumblr.com/"
                 },
                 {
                     "imgUrl": "im/KyloYippie.png",
-                    "name": "Kylo Yippie",
-                    "artist": "bluerhapsodyy"
+                    "name": "Yippie",
+                    "artist": "bluerhapsodyy",
+                    "artistUrl": "https://bsky.app/profile/bluerhapsodyy.bsky.social"
                 }
             ]
         },
@@ -269,67 +306,67 @@
             "items": [
                 {
                     "imgUrl": "im/KyloHi.gif",
-                    "name": "Kylo Hi",
+                    "name": "Hi",
                     "artist": "nnathan (Discord)",
                     "width": 220
                 },
                 {
                     "imgUrl": "im/KyloBye.gif",
-                    "name": "Kylo Bye",
+                    "name": "Bye",
                     "artist": "nnathan (Discord)",
                     "width": 220
                 },
                 {
                     "imgUrl": "im/KyloBlep.gif",
-                    "name": "Kylo Blep",
+                    "name": "Blep",
                     "artist": "conniethewolf",
                     "artistUrl": "https://ych.art/user/conniethewolf"
                 },
                 {
                     "imgUrl": "im/KyloNodL.gif",
-                    "name": "Kylo Nod Left",
+                    "name": "Nod Left",
                     "artist": "otter-boo",
                     "artistUrl": "https://www.deviantart.com/otter-boo"
                 },
                 {
                     "imgUrl": "im/KyloNodR.gif",
-                    "name": "Kylo Nod Right",
+                    "name": "Nod Right",
                     "artist": "otter-boo",
                     "artistUrl": "https://www.deviantart.com/otter-boo"
                 },
                 {
                     "imgUrl": "im/KyloNodFast.gif",
-                    "name": "Kylo Nod Fast",
+                    "name": "Nod Fast",
                     "artist": "otter-boo",
                     "artistUrl": "https://www.deviantart.com/otter-boo"
                 },
                 {
                     "imgUrl": "im/KyloPet.gif",
-                    "name": "Kylo Pet",
+                    "name": "Pet",
                     "artist": "otter-boo",
                     "artistUrl": "https://www.deviantart.com/otter-boo"
                 },
                 {
                     "imgUrl": "im/KyloShaker.gif",
-                    "name": "Kylo Shaker",
+                    "name": "Shaker",
                     "artist": "otter-boo",
                     "artistUrl": "https://www.deviantart.com/otter-boo"
                 },
                 {
                     "imgUrl": "im/KyloTailWagL.gif",
-                    "name": "Kylo Tail Wag Left",
+                    "name": "Tail Wag Left",
                     "artist": "juliandough",
                     "artistUrl": "https://x.com/bobbycat25"
                 },
                 {
                     "imgUrl": "im/KyloTailWagR.gif",
-                    "name": "Kylo Tail Wag Right",
+                    "name": "Tail Wag Right",
                     "artist": "juliandough",
                     "artistUrl": "https://x.com/bobbycat25"
                 },
                 {
                     "imgUrl": "im/KyloType.gif",
-                    "name": "Kylo Type",
+                    "name": "Type",
                     "artist": "otter-boo",
                     "artistUrl": "https://www.deviantart.com/otter-boo"
                 }
