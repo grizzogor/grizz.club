@@ -15,6 +15,11 @@
                     "artistUrl": "https://bsky.app/profile/bluerhapsodyy.bsky.social"
                 },
                 {
+                    "imgUrl": "im/KyloAga.png",
+                    "name": "Aga",
+                    "artist": "grizzogor (me)"
+                },
+                {
                     "imgUrl": "im/KyloAngry.png",
                     "name": "Angry",
                     "artist": "chequerootlurks",
@@ -369,6 +374,12 @@
                     "name": "Type",
                     "artist": "otter-boo",
                     "artistUrl": "https://www.deviantart.com/otter-boo"
+                },
+                {
+                    "imgUrl": "im/KyloWaga.png",
+                    "name": "Waga",
+                    "artist": "grizzogor (me)",
+                    "width": 220
                 }
             ]
         }
