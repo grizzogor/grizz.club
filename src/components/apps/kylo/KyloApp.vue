@@ -33,19 +33,6 @@
                         wolf protogen hybrid fursona that I use online.
                     </p>
                     <p>
-                        For more information about the specifications of Kylo,
-                        visit my
-                        <a
-                            href="https://nx.grizz.club/s/KyloByteNotes"
-                            rel="noopener noreferrer"
-                            target="_blank"
-                        >
-                            Nextcloud Note
-                            <i class="bi bi-box-arrow-up-right" />
-                        </a>
-                        about him.
-                    </p>
-                    <p>
                         I have a reference sheet available of Kylo, please contact me if you want to use it.
                     </p>
                 </div>

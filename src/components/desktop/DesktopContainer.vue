@@ -19,7 +19,7 @@
                         @activate="onIconActivate"
                         @launch="
                             handleOpenLink(
-                                'https://nx.grizz.club/s/KyloByte'
+                                'https://grizzogor-my.sharepoint.com/:f:/g/personal/ian_grizz_club/EoDcxZuvAbxCgVzzRPvy4gsBE_yumJhbUPvI-OpXKX3FSA'
                             )
                         "
                     />
@@ -31,18 +31,8 @@
                         @activate="onIconActivate"
                         @launch="
                             handleOpenLink(
-                                'https://nx.grizz.club/s/GrizzClubDownloads'
+                                'https://grizzogor-my.sharepoint.com/:f:/g/personal/ian_grizz_club/ElJCtoOeuVxCukRRAhaskZ8BZfysGTn8g8Hb2jr0KTzQdA?e=10OmdW'
                             )
-                        "
-                    />
-                    <DesktopIcon
-                        :isActive="activeIconId === 'Blog'"
-                        icon="blog"
-                        text="Blog"
-                        is-link
-                        @activate="onIconActivate"
-                        @launch="
-                            handleOpenLink('https://spy.tf/author/grizzogor/')
                         "
                     />
                     <DesktopIcon
