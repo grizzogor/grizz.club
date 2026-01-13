@@ -65,6 +65,12 @@
                     "artistUrl": "https://chequerootlurks.tumblr.com/"
                 },
                 {
+                    "imgUrl": "im/KyloClueless.png",
+                    "name": "Clueless",
+                    "artist": "bluerhapsodyy",
+                    "artistUrl": "https://bsky.app/profile/bluerhapsodyy.bsky.social"
+                },
+                {
                     "imgUrl": "im/KyloDemise.png",
                     "name": "Demise",
                     "artist": "juliandough",
@@ -74,6 +80,12 @@
                     "imgUrl": "im/KyloDentge.png",
                     "name": "Dentge",
                     "artist": "rosol (Discord)"
+                },
+                {
+                    "imgUrl": "im/KyloDrool.png",
+                    "name": "Drool",
+                    "artist": "Kat3784",
+                    "artistUrl": "https://bsky.app/profile/kat3784.bsky.social"
                 },
                 {
                     "imgUrl": "im/KyloEepy.png",
@@ -238,6 +250,12 @@
                     "name": "Scheming",
                     "artist": "bluerhapsodyy",
                     "artistUrl": "https://bsky.app/profile/bluerhapsodyy.bsky.social"
+                },
+                {
+                    "imgUrl": "im/KyloSideeye.png",
+                    "name": "Sideeye",
+                    "artist": "Kat3784",
+                    "artistUrl": "https://bsky.app/profile/kat3784.bsky.social"
                 },
                 {
                     "imgUrl": "im/KyloSkibidi.png",
