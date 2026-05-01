@@ -19,7 +19,7 @@
                         @activate="onIconActivate"
                         @launch="
                             handleOpenLink(
-                                'https://grizzogor-my.sharepoint.com/:f:/g/personal/ian_grizz_club/EoDcxZuvAbxCgVzzRPvy4gsBE_yumJhbUPvI-OpXKX3FSA'
+                                'https://nx.grizz.club/s/KyloByte'
                             )
                         "
                     />
@@ -31,7 +31,7 @@
                         @activate="onIconActivate"
                         @launch="
                             handleOpenLink(
-                                'https://grizzogor-my.sharepoint.com/:f:/g/personal/ian_grizz_club/ElJCtoOeuVxCukRRAhaskZ8BZfysGTn8g8Hb2jr0KTzQdA?e=10OmdW'
+                                'https://nx.grizz.club/s/GrizzClubDownloads'
                             )
                         "
                     />
