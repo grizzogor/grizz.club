@@ -128,6 +128,12 @@
                     "artistUrl": "https://bsky.app/profile/bluerhapsodyy.bsky.social"
                 },
                 {
+                    "imgUrl": "im/KyloGuh.png",
+                    "name": "Guh",
+                    "artist": "juliandough",
+                    "artistUrl": "https://bsky.app/profile/juliandoes.art"
+                },
+                {
                     "imgUrl": "im/KyloGun.png",
                     "name": "Gun",
                     "artist": "rosol (Discord)"
@@ -143,6 +149,18 @@
                     "name": "Heart",
                     "artist": "chequerootlurks",
                     "artistUrl": "https://chequerootlurks.tumblr.com/"
+                },
+                {
+                    "imgUrl": "im/KyloHoldLynx.png",
+                    "name": "Holding Lynx",
+                    "artist": "shroomy_draws_",
+                    "artistUrl": "https://www.instagram.com/shroomy_draws_"
+                },
+                {
+                    "imgUrl": "im/LynxHoldKylo.png",
+                    "name": "Lynx Hold Kylo",
+                    "artist": "shroomy_draws_",
+                    "artistUrl": "https://www.instagram.com/shroomy_draws_"
                 },
                 {
                     "imgUrl": "im/KyloHug.png",
