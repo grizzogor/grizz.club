@@ -348,14 +348,16 @@
                 {
                     "imgUrl": "im/KyloHi.gif",
                     "name": "Hi",
-                    "artist": "nnathan (Discord)",
-                    "width": 220
+                    "artist": "natezacate",
+                    "artistUrl": "https://ko-fi.com/natezacate",
+                    "width": 190
                 },
                 {
                     "imgUrl": "im/KyloBye.gif",
                     "name": "Bye",
-                    "artist": "nnathan (Discord)",
-                    "width": 220
+                    "artist": "natezacate",
+                    "artistUrl": "https://ko-fi.com/natezacate",
+                    "width": 190
                 },
                 {
                     "imgUrl": "im/KyloBlep.gif",
