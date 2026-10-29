@@ -350,14 +350,14 @@
                     "name": "Hi",
                     "artist": "natezacate",
                     "artistUrl": "https://ko-fi.com/natezacate",
-                    "width": 190
+                    "width": 193
                 },
                 {
                     "imgUrl": "im/KyloBye.gif",
                     "name": "Bye",
                     "artist": "natezacate",
                     "artistUrl": "https://ko-fi.com/natezacate",
-                    "width": 190
+                    "width": 193
                 },
                 {
                     "imgUrl": "im/KyloBlep.gif",
@@ -417,7 +417,7 @@
                     "imgUrl": "im/KyloWaga.png",
                     "name": "Waga",
                     "artist": "grizzogor (me)",
-                    "width": 220
+                    "width": 207
                 }
             ]
         }
